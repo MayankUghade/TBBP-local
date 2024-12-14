@@ -1,0 +1,32 @@
+.title {
+  font-size: rem(60px);
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(45px);
+  }
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(38px);
+  }
+}
+
+.span {
+  display: block;
+}
+
+.highlight1 {
+  color: var(--mantine-color-brand-9);
+  font-weight: 900;
+}
+
+.highlight2 {
+  color: var(--mantine-color-indigo-5);
+  font-weight: 900;
+}
+
+.highlight3 {
+  color: var(--mantine-color-red-5);
+  font-weight: 900;
+}

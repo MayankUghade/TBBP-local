@@ -1,0 +1,49 @@
+.item {
+  padding: var(--mantine-spacing-sm) 0;
+}
+
+.chevron {
+  color: var(--mantine-color-red-5);
+  border: 1px solid var(--mantine-color-red-5);
+  border-radius: var(--mantine-radius-xl);
+  width: rem(32px);
+  height: rem(32px);
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  &[data-rotate] {
+    transform: rotate(45deg);
+  }
+}
+
+.icon {
+  width: rem(16px);
+  height: rem(16px);
+}
+
+.label {
+  transition: all 0.3s ease;
+}
+
+.item[data-active="true"] {
+  .label {
+    color: var(--brand-indigo);
+    font-size: var(--mantine-font-size-lg);
+    @media screen and (max-width: 768px) {
+      font-size: var(--mantine-font-size-md);
+    }
+  }
+  .chevron {
+    color: #fff;
+    background-color: var(--mantine-color-red-7);
+    scale: 1.1;
+  }
+}
+
+.content {
+  color: var(--mantine-color-dark-4);
+  margin-top: 10px;
+  @media (max-width: 768px) {
+    font-size: var(--mantine-font-size-sm);
+  }
+}

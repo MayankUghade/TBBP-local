@@ -1,0 +1,21 @@
+.valuesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: rem(28px);
+
+  @media (max-width: em(1024px)) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.valueCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: rem(18px);
+}
+
+.valueTitle {
+  color: var(--brand-indigo);
+  margin-bottom: rem(8px);
+}

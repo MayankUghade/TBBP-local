@@ -1,0 +1,9 @@
+.statContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+  @media (max-width: em(1024px)) {
+    grid-template-columns: 1fr;
+  }
+}

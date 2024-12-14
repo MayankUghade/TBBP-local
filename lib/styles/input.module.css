@@ -1,0 +1,14 @@
+.input {
+  &[data-variant="underline"] {
+    border-bottom: rem(2px) solid;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    border-color: var(--mantine-color-gray-3);
+
+    &:focus {
+      border-color: var(--mantine-color-red-3);
+    }
+  }
+}

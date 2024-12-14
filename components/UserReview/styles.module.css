@@ -1,0 +1,53 @@
+/* Header styles */
+.inner {
+  composes: inner from "../AboutHero/styles.module.css";
+}
+.content {
+  composes: content from "../AboutHero/styles.module.css";
+}
+.title {
+  composes: title from "../AboutHero/styles.module.css";
+}
+.highlight {
+  composes: highlight from "../AboutHero/styles.module.css";
+}
+.image {
+  composes: image from "../AboutHero/styles.module.css";
+}
+
+/* Form styles */
+.form {
+  border: 1px solid var(--mantine-color-gray-2);
+  border-radius: var(--mantine-radius-lg);
+  padding: var(--mantine-spacing-xl) calc(var(--mantine-spacing-xl) * 2);
+  margin-bottom: var(--mantine-spacing-xl);
+}
+
+/* Dropzone styles */
+.dropzone {
+  flex-grow: 1;
+  border: 1px solid var(--mantine-color-red-2);
+  border-radius: var(--mantine-radius-lg);
+  margin: var(--mantine-spacing-xl) 0;
+  background-color: var(--mantine-color-red-0);
+}
+
+.imagePreview {
+  border: 1px dashed var(--mantine-color-red-2);
+  border-radius: var(--mantine-radius-lg);
+  object-fit: contain;
+}
+
+.dropzoneGroup {
+  @media screen and (max-width: 755px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.dropzoneText {
+  @media screen and (max-width: 755px) {
+    text-align: center;
+    font-size: var(--mantine-font-size-sm);
+  }
+}

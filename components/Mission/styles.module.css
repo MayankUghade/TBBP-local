@@ -1,0 +1,32 @@
+.paper {
+  border: 0.5px solid var(--brand-indigo);
+  width: 100%;
+  text-align: center;
+  padding: rem(44px);
+
+  @media (max-width: 768px) {
+    padding: rem(20px);
+    border: none;
+  }
+}
+
+.title {
+  color: var(--brand-blue);
+  text-transform: uppercase;
+  font-size: 40px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.description {
+  color: var(--brand-blue);
+  font-size: 20px;
+  margin-top: rem(20px);
+  text-align: justify;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}

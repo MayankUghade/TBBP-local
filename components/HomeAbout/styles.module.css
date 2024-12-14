@@ -1,0 +1,46 @@
+.container {
+  background: var(--gradient-light);
+  margin: rem(32px) auto;
+  padding: 0 var(--mantine-spacing-xl);
+  border-radius: var(--mantine-radius-default);
+
+  @media (max-width: $mantine-breakpoint-lg) {
+    padding: var(--mantine-spacing-xl);
+  }
+}
+
+.description {
+  line-height: 1.2;
+}
+
+.aboutImage {
+  flex-basis: 45%;
+  height: auto;
+  position: relative;
+  left: -80px;
+  @media (max-width: $mantine-breakpoint-lg) {
+    width: 250px;
+    left: 0px;
+  }
+}
+
+.rightSection {
+  flex-basis: 50%;
+  @media (max-width: $mantine-breakpoint-lg) {
+    flex-basis: 100%;
+  }
+}
+
+.rightSection > div {
+  @media (max-width: $mantine-breakpoint-lg) {
+    justify-content: center;
+  }
+}
+
+.section {
+  gap: var(--mantine-spacing-xl);
+  margin-top: var(--mantine-spacing-md);
+  @media (max-width: $mantine-breakpoint-lg) {
+    text-align: center;
+  }
+}

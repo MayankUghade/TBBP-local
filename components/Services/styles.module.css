@@ -1,0 +1,27 @@
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gridContainer > div {
+  flex-basis: 30%;
+  height: max-content;
+}
+
+.inner {
+  composes: inner from "../AboutHero/styles.module.css";
+}
+.content {
+  composes: content from "../AboutHero/styles.module.css";
+}
+.title {
+  composes: title from "../AboutHero/styles.module.css";
+  color: var(--brand-indigo);
+  text-transform: uppercase;
+}
+.highlight {
+  composes: highlight3 from "../AboutHero/styles.module.css";
+}
+.image {
+  composes: image from "../AboutHero/styles.module.css";
+}

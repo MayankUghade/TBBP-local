@@ -1,0 +1,52 @@
+:root {
+  --max-width: 1200px;
+
+  --brand-indigo: #356af4;
+  --brand-blue: #022e87;
+  --brand-maroon: #d1010d;
+
+  --stat-card-bg: #ebf1fe;
+  --gradient-light: linear-gradient(
+    256.32deg,
+    rgba(206, 62, 80, 0.08) 4.02%,
+    rgba(71, 47, 123, 0.08) 33.64%,
+    rgba(31, 41, 139, 0.08) 64.65%,
+    rgba(1, 115, 188, 0.08) 96.58%
+  );
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* 
+For testimonials fade out effect
+NOTE: Remove this if hinders other styling 
+*/
+.testimonials .mantine-Carousel-slide {
+  transition: opacity 0.5s linear 0.1s;
+}
+
+.testimonials .mantine-Carousel-slide:not(.is-selected) {
+  opacity: 0.4;
+}
+
+/* ----------------masonary grid----------------- */
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > button {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}
