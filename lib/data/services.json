@@ -24,6 +24,20 @@
       "tagline": "Ready for a new challenge? We've got you covered.",
       "description": "Your Next Chapter: Navigating Career Transitions with Confidence",
       "serviceIds": ["career-transition"]
+    },
+    "international-education-assitance": {
+      "id": "international-education-assitance",
+      "name": "International Education Assistance",
+      "tagline": "Big Brother Program: Your Guide to Studying Abroad",
+      "description": "Your Global Passport to Academic Excellence",
+      "serviceIds": ["international-education-assitance"]
+    },
+    "aviation-career-program": {
+      "id": "aviation-career-program",
+      "name": "Aviation Career Program",
+      "tagline": "Elevate Your Aviation Career with CAACO",
+      "description": "Are you ready to take flight in the aviation industry?",
+      "serviceIds": ["aviation-career-program"]
     }
   },
   "services": {
@@ -38,7 +52,7 @@
       "id": "research-and-preparation",
       "heading": "Research and Preparation Assistance",
       "desc": "Let us simplify the complex process of finding and applying to the right programs. Our dedicated team is here to guide you every step of the way. From comprehensive program research to personalized application support, we’ll ensure you’re well-prepared to achieve your academic goals.",
-      "image": "/services/research-prep.jpg",
+      "image": "/services/research-prep.svg",
       "dataIds": ["data13"]
     },
     "career-planning": {
@@ -75,6 +89,20 @@
       "desc": "Our expert-led career transition support program is designed to help you navigate this exciting phase of your professional journey.",
       "image": "/services/career-transition.svg",
       "dataIds": ["data21"]
+    },
+    "international-education-assitance": {
+      "id": "international-education-assitance",
+      "heading": "Dream of studying abroad? Let Big Brother guide you.",
+      "desc": "Navigating the complexities of international education can be daunting. That's where we come in. Our dedicated team of experts is here to simplify the process and ensure a smooth transition to your dream destination.",
+      "image": "/services/career-transition.svg",
+      "dataIds": ["data22"]
+    },
+    "aviation-career-program": {
+      "id": "aviation-career-program",
+      "heading": "Course Details",
+      "desc": "Our Certification in Airport, Airline & Cargo Operations (CAACO) is your gateway to success. This comprehensive online program, delivered by industry experts from GMR Aero Academy, equips you with the essential skills to excel in airport, airline, and cargo operations.",
+      "image": "/services/career-transition.svg",
+      "dataIds": ["data23", "data24", "data25", "data26", "data27"]
     }
   },
   "data": {
@@ -153,6 +181,62 @@
         "Resume Revamp: Create a powerful resume that showcases your unique value proposition.",
         "Network Building: Connect with industry professionals and expand your professional network."
       ]
+    },
+    "data22": {
+      "id": "data22",
+      "type": "list",
+      "description": "Our Services",
+      "content": [
+        "College & Program Matching: Identify the best-fit institutions and programs based on your academic goals and interests.",
+        "Stand-Out SOP: Craft compelling Statements of Purpose that highlight your unique qualities and experiences.",
+        "Stress-Free Applications: Streamline the application process with expert guidance and support.",
+        "Visa Support: Navigate the visa application process with ease, ensuring a successful outcome.",
+        "Financial Aid Exploration: Explore scholarship and financial aid opportunities to fund your studies abroad."
+      ]
+    },
+    "data23": {
+      "id": "data23",
+      "type": "list",
+      "description": "Curated Course Selection",
+      "content": [
+        "Certification in Airport, Airline and Cargo Operations (CAACO)",
+        "Certification in Customer Service (CCSE)",
+        "Certification in Corporate Readiness Programme (CCRP)"
+      ]
+    },
+    "data24": {
+      "id": "data24",
+      "type": "list",
+      "description": "What You'll Gain",
+      "content": [
+        "In-depth Knowledge: Master the fundamentals of airport, airline, and cargo operations.",
+        "Global Certification: Earn prestigious certifications from ICAO, IATA, and other recognized bodies.",
+        "Practical Skills: Develop real-world skills through hands-on training.",
+        "Career Advancement: Benefit from our dedicated placement assistance to secure exciting job opportunities both domestically and internationally."
+      ]
+    },
+    "data25": {
+      "id": "data25",
+      "type": "list",
+      "description": "Why Choose CAACO?",
+      "content": [
+        "Expert Faculty: Learn from industry veterans.",
+        "Flexible Learning: Online format allows for flexible learning.",
+        "Global Opportunities: Access to international placement opportunities.",
+        "Comprehensive Support: 100% Job Placement Assistance:",
+        "a) Domestic Opportunities: Connect with leading aviation companies across India.",
+        "b) International Prospects: Explore global career opportunities through our extensive network."
+      ]
+    },
+    "data26": {
+      "id": "data26",
+      "type": "paragraph",
+      "content": "Our collaboration with ATFS and GMR Aero Academy ensures a holistic training experience. With a strong focus on practical skills and career development, we empower you to achieve your aviation goals."
+    },
+    "data27": {
+      "id": "data27",
+      "type": "paragraph",
+      "content": "Don't miss this opportunity to soar to new heights in your aviation career. Enroll today and let us guide you towards a brighter future."
     }
   },
   "serviceDataTemplate": {

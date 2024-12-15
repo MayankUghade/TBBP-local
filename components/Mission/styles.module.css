@@ -1,4 +1,4 @@
-.paper {
+.paperMission {
   width: 100%;
   text-align: center;
   padding: rem(44px);
@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   gap: rem(36px);
+  border-radius: var(--mantine-radius-default);
 
   @media (max-width: 768px) {
     padding: rem(20px);
@@ -23,6 +24,7 @@
   align-items: center;
   gap: rem(36px);
   flex-direction: row-reverse;
+  border-radius: var(--mantine-radius-default);
 
   @media (max-width: 768px) {
     padding: rem(20px);

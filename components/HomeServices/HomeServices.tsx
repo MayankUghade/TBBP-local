@@ -1,6 +1,5 @@
 "use client";
 import { Box, Container, Group, Text, Title } from "@mantine/core";
-import ServicesCarousel from "./ServicesCarousel";
 import Subheading from "../UI/Subheading";
 import { serviceCategories } from "lib/data/home";
 import CategoryCard from "../UI/Cards/CategoryCard";

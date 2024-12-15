@@ -69,3 +69,42 @@
     height: 200px;
   }
 }
+
+/* Tabs design --------- */
+.list {
+  position: relative;
+  margin-bottom: var(--mantine-spacing-md);
+}
+
+.indicator {
+  background-color: var(--mantine-color-white);
+  border-radius: var(--mantine-radius-lg);
+
+  border: 1px solid var(--mantine-color-gray-2);
+}
+
+.tab {
+  z-index: 1;
+  font-weight: 600;
+  background: var(--mantine-color-brand-0);
+  color: var(--mantine-color-indigo-5);
+  padding: var(--mantine-spacing-xl);
+  box-shadow: var(--mantine-shadow-md);
+  border-radius: var(--mantine-radius-lg);
+  margin: 0 var(--mantine-spacing-xs);
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: var(--brand-blue);
+    border: 1px solid var(--brand-blue);
+  }
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: center;
+  gap: var(--mantine-spacing-md);
+  position: relative;
+  bottom: -40px;
+}

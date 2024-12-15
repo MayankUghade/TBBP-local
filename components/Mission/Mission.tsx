@@ -7,9 +7,8 @@ import { missiongVisionData } from "lib/data/home";
 const Mission = () => {
   return (
     <Container size="lg" mt="xl">
-      <Paper
-        className={classes.paper}
-        component={motion.div}
+      <motion.div
+        className={classes.paperMission}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{
           opacity: 1,
@@ -18,7 +17,11 @@ const Mission = () => {
             duration: 0.4,
           },
         }}
-        viewport={{ amount: "some" }}
+        whileHover={{
+          scale: 1.05,
+          translateY: -10,
+        }}
+        viewport={{ once: true, amount: "some" }}
       >
         <Title order={2} className={classes.title}>
           {missiongVisionData.mission.title}
@@ -26,7 +29,7 @@ const Mission = () => {
         <Text size="lg" mt={20} className={classes.description}>
           {missiongVisionData.mission.content}
         </Text>
-      </Paper>
+      </motion.div>
     </Container>
   );
 };

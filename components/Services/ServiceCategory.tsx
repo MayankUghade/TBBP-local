@@ -8,7 +8,6 @@ import {
   Text,
   Title,
 } from "@mantine/core";
-import { axiosInstance } from "lib/axios";
 import classes from "./styles.module.css";
 
 import servicesData from "../../lib/data/services.json";
@@ -16,6 +15,8 @@ import ServiceTabs from "./ServiceTabs";
 import ServicesAll from "./ServicesAll";
 import WhyUs from "../WhyUs/WhyUs";
 import ContactCTA from "../Landing/ContactCTA";
+import { useRouter } from "next/router";
+import { useMediaQuery } from "@mantine/hooks";
 export interface ServicesProps {
   id: string;
   name: string;
@@ -24,18 +25,19 @@ export interface ServicesProps {
 }
 
 const ServiceCategory = ({ slug }: { slug: string }) => {
+  const matches = useMediaQuery("(max-width: 62em)");
   const categorySelected =
     servicesData.categories[slug as keyof typeof servicesData.categories];
   const serviceIds = categorySelected.serviceIds;
-  // const tabs = serviceIds.map((service) => {
-  //   const data =
-  //     servicesData.services[service as keyof typeof servicesData.services];
+  const tabs = serviceIds.map((service) => {
+    const data =
+      servicesData.services[service as keyof typeof servicesData.services];
 
-  //   return {
-  //     label: data.heading,
-  //     href: data.id,
-  //   };
-  // });
+    return {
+      label: data.heading,
+      href: data.id,
+    };
+  });
 
   const services = serviceIds.map((id) => {
     return servicesData.services[id as keyof typeof servicesData.services];
@@ -43,7 +45,7 @@ const ServiceCategory = ({ slug }: { slug: string }) => {
 
   return (
     <>
-      <Container size="lg" style={{ margin: "0 auto 6rem" }}>
+      <Container size="lg" style={{ margin: "0 auto 5rem" }}>
         <Stack gap={10}>
           {/* Heading and tagline */}
           <Stack gap={4} mt={16}>
@@ -57,11 +59,14 @@ const ServiceCategory = ({ slug }: { slug: string }) => {
           <Box style={{ display: "flex", justifyContent: "center" }}>
             <ContactCTA size="lg" />
           </Box>
-
-          {/* Tabs */}
-          {/* {tabs.length > 1 && <ServiceTabs tabs={tabs} />} */}
         </Stack>
       </Container>
+      {tabs.length > 1 && !matches && (
+        <Container size="lg" className={classes.tabContainer}>
+          {/* Tabs */}
+          <ServiceTabs tabs={tabs} />
+        </Container>
+      )}
       <ServicesAll services={services} />
       <WhyUs />
     </>

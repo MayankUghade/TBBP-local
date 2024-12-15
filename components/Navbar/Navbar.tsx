@@ -1,7 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { Container, Group, Burger, Button, Drawer, Box } from "@mantine/core";
+import {
+  Container,
+  Group,
+  Burger,
+  Button,
+  Drawer,
+  Box,
+  Menu,
+  Text,
+  Title,
+} from "@mantine/core";
 import { useDisclosure, useWindowScroll } from "@mantine/hooks";
 import classes from "./styles.module.css";
 import Image from "next/image";
@@ -9,6 +19,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ContactModal from "../Modals/ContactModal";
 import PrimaryBtn from "../UI/Buttons/PrimaryBtn";
+import servicesData from "../../lib/data/services.json";
 
 const links = [
   { link: "/", label: "Home" },
@@ -24,6 +35,7 @@ function Navbar() {
   const [scroll, scrollTo] = useWindowScroll();
   const [drawerOpened, { toggle: openDrawer, close: closeDrawer }] =
     useDisclosure(false);
+  const categories = servicesData.categories;
 
   return (
     <>
@@ -60,6 +72,31 @@ function Navbar() {
                 {link.label}
               </Link>
             ))}
+            {/* Services */}
+            <Menu
+              trigger="hover"
+              shadow="md"
+              width={200}
+              radius="md"
+              offset={20}
+            >
+              <Menu.Target>
+                <Text className={classes.link}>Services</Text>
+              </Menu.Target>
+
+              <Menu.Dropdown>
+                {Object.values(categories).map((category) => (
+                  <Menu.Item
+                    key={category.id + "-nav"}
+                    component={Link}
+                    href={`/services/${category.id}`}
+                  >
+                    {category.name}
+                  </Menu.Item>
+                ))}
+              </Menu.Dropdown>
+            </Menu>
+
             {/* TODO: Add whatsapp link here */}
             <Link
               href="https://api.whatsapp.com/send?phone=917093116004"
@@ -102,7 +139,23 @@ function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <PrimaryBtn>Contact Us</PrimaryBtn>
+            <Title order={4} tt="uppercase" mt={20}>
+              services
+            </Title>
+            {
+              // Services
+              Object.values(categories).map((category) => (
+                <Link
+                  key={category.id}
+                  href={`/services/${category.id}`}
+                  className={`${classes.link}`}
+                  onClick={closeDrawer}
+                >
+                  {category.name}
+                </Link>
+              ))
+            }
+            <PrimaryBtn mt={20}>Contact Us</PrimaryBtn>
           </Drawer>
         </Container>
       </header>

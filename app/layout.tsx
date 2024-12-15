@@ -1,13 +1,16 @@
-import "@mantine/core/styles.css";
+import "@mantine/core/styles.layer.css";
 import React from "react";
-import { MantineProvider, ColorSchemeScript } from "@mantine/core";
+import {
+  MantineProvider,
+  ColorSchemeScript,
+  mantineHtmlProps,
+} from "@mantine/core";
 import { theme } from "../theme";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import { Poppins } from "next/font/google";
 import "@mantine/carousel/styles.css";
 import "./globals.css";
-import TanstackProvider from "lib/providers/TanstackProvider";
 import { Metadata } from "next";
 
 // If loading a variable font, you don't need to specify the font weight
@@ -67,7 +70,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: any }) {
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en" className={poppins.className} {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript />
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -83,13 +86,11 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <TanstackProvider>
-          <MantineProvider theme={theme}>
-            <Navbar />
-            {children}
-            <Footer />
-          </MantineProvider>
-        </TanstackProvider>
+        <MantineProvider theme={theme}>
+          <Navbar />
+          {children}
+          <Footer />
+        </MantineProvider>
       </body>
     </html>
   );

@@ -1,13 +1,8 @@
 "use client";
-import { Accordion, Text } from "@mantine/core";
+import { Accordion } from "@mantine/core";
 import classes from "./styles.module.css";
 import { IconPlus } from "@tabler/icons-react";
 import faqs from "./data.json";
-
-interface FaqProps {
-  question: string;
-  answer: string;
-}
 
 const FaqAccordian = () => {
   return (

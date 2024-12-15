@@ -7,9 +7,8 @@ import { missiongVisionData } from "lib/data/home";
 const Vision = () => {
   return (
     <Container size="lg" mt="xl">
-      <Paper
+      <motion.div
         className={classes.paperVision}
-        component={motion.div}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{
           opacity: 1,
@@ -26,7 +25,7 @@ const Vision = () => {
         <Text size="lg" mt={20} className={classes.visionDescription}>
           {missiongVisionData.vision.content}
         </Text>
-      </Paper>
+      </motion.div>
     </Container>
   );
 };

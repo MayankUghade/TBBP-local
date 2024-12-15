@@ -1,4 +1,4 @@
-.root {
+.primaryBtn {
   transition: all 0.4s ease-in-out;
 
   background-image: linear-gradient(
@@ -13,6 +13,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.root:hover {
+.primaryBtn:hover {
   background-size: 200% auto;
 }

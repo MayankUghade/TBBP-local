@@ -21,11 +21,9 @@ const OurValues = () => {
 
       <Box className={classes.valuesContainer}>
         {ourValues.map((value, index) => (
-          <Paper
+          <motion.div
             key={value.title}
-            radius="lg"
             className={classes.valueCard}
-            component={motion.div}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{
               opacity: 1,
@@ -49,7 +47,7 @@ const OurValues = () => {
               </Title>
               <Text size="sm">{value.description}</Text>
             </Box>
-          </Paper>
+          </motion.div>
         ))}
       </Box>
     </Container>

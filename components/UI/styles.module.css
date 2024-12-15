@@ -60,6 +60,8 @@
   align-items: flex-start;
   gap: rem(24px);
   width: 100%;
+  padding: var(--mantine-spacing-lg) var(--mantine-spacing-xl);
+  border-radius: var(--mantine-radius-default);
 
   @media (max-width: em(1024px)) {
     flex-basis: 45%;

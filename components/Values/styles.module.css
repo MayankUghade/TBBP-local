@@ -13,6 +13,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: rem(18px);
+  border-radius: var(--mantine-radius-default);
 }
 
 .valueTitle {

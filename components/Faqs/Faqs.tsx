@@ -1,7 +1,5 @@
-import { Container, Title, Accordion, Space } from "@mantine/core";
-import classes from "./styles.module.css";
+import { Container, Space } from "@mantine/core";
 import Subheading from "../UI/Subheading";
-import { IconPlus } from "@tabler/icons-react";
 import FaqAccordian from "./FaqAccordian";
 
 const Faqs = () => {

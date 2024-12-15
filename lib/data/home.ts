@@ -61,14 +61,12 @@ export const serviceCategories = [
     icon: BsBriefcaseFill,
   },
   {
-    // id: "international-education-assitance",
-    id: "#",
+    id: "international-education-assitance",
     name: "International Education Assistance",
     icon: SlGlobe,
   },
   {
-    // id: "aviation-career-program",
-    id: "#",
+    id: "aviation-career-program",
     name: "Aviation Career Program",
     icon: BsFillAirplaneFill,
   },

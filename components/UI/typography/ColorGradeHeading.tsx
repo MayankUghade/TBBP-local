@@ -1,5 +1,7 @@
-import { Title } from "@mantine/core";
 import classes from "./styles.module.css";
+import classNames from "classnames";
+
+const cx = classNames.bind(classes);
 
 const ColorGradeHeading = ({
   textBrand = "Your Guide,",
@@ -11,15 +13,11 @@ const ColorGradeHeading = ({
   textRed?: string;
 }) => {
   return (
-    <Title className={classes.title} order={1}>
-      <span className={`${classes.span} ${classes.highlight1}`}>
-        {textBrand}
-      </span>
-      <span className={`${classes.span} ${classes.highlight2}`}>
-        {textIndigo}
-      </span>
-      <span className={`${classes.span} ${classes.highlight3}`}>{textRed}</span>
-    </Title>
+    <h1 className={classes.heroHeading}>
+      <span className={cx(classes.span, classes.highlight1)}>{textBrand}</span>
+      <span className={cx(classes.span, classes.highlight2)}>{textIndigo}</span>
+      <span className={cx(classes.span, classes.highlight3)}>{textRed}</span>
+    </h1>
   );
 };
 export default ColorGradeHeading;
