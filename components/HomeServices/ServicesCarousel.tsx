@@ -6,7 +6,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { axiosInstance } from "lib/axios";
-import { ServicesProps } from "../Services/Services";
+import { ServicesProps } from "../Services/ServiceCategory";
 import { Text } from "@mantine/core";
 
 const ServicesCarousel = () => {

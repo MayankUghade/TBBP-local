@@ -3,11 +3,14 @@ import { ActionIcon, Group } from "@mantine/core";
 import {
   IconBrandFacebook,
   IconBrandInstagram,
+  IconBrandInstagramFilled,
   IconBrandLinkedin,
   IconBrandTwitter,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import ButtonGestureRotate from "lib/animations/ButtonGestureRotate";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebookF } from "react-icons/fa";
 
 const Socials = () => {
   return (
@@ -16,7 +19,7 @@ const Socials = () => {
         <ActionIcon
           variant="filled"
           style={{
-            background: "var(--brand-indigo)",
+            background: "var(--brand-blue)",
             borderRadius: "50%",
           }}
           size="xl"
@@ -26,12 +29,10 @@ const Socials = () => {
           target="_blank"
           rel="noopener"
         >
-          <IconBrandInstagram
+          <AiFillInstagram
             style={{
-              width: "70%",
-              height: "70%",
+              fontSize: "1.5rem",
             }}
-            stroke={1.5}
           />
         </ActionIcon>
       </ButtonGestureRotate>
@@ -80,9 +81,8 @@ const Socials = () => {
           target="_blank"
           rel="noopener"
         >
-          <IconBrandFacebook
-            style={{ width: "70%", height: "70%" }}
-            stroke={1.5}
+          <FaFacebookF
+            style={{ fontSize: "1.5rem" }}
           />
         </ActionIcon>
       </ButtonGestureRotate> */}

@@ -1,15 +1,15 @@
 import ContactFooter from "@/components/ContactFooter/ContactFooter";
-import Services from "@/components/Services/Services";
+import ServiceCategory from "@/components/Services/ServiceCategory";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services",
 };
 
-const page = () => {
+const page = ({ params }: { params: { slug: string } }) => {
   return (
     <>
-      <Services />
+      <ServiceCategory slug={params.slug} />
       <ContactFooter />
     </>
   );

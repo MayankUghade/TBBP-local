@@ -5,7 +5,7 @@
 }
 
 .heading {
-  font-size: rem(48px);
+  font-size: rem(52px);
   color: var(--brand-blue);
 
   @media (max-width: 768px) {
@@ -31,18 +31,21 @@
 }
 
 .cta {
-  @media (max-width: 768px) {
-    justify-content: center;
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin: 0 auto;
   }
 }
 
 .rightSection {
   align-items: flex-end;
   flex-basis: 40%;
-
+  height: rem(400px);
+  border-radius: var(--mantine-radius-default);
+  overflow: hidden;
   @media (max-width: 768px) {
     flex-basis: 100%;
     margin-top: var(--mantine-spacing-xl);
+    width: 100%;
     align-items: center;
   }
 }

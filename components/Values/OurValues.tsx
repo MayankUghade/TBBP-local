@@ -4,23 +4,23 @@ import Subheading from "../UI/Subheading";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import classes from "./styles.module.css";
-import { values } from "./data.json";
+import { ourValues } from "lib/data/about";
 
 const OurValues = () => {
   return (
     <Container size="lg" style={{ margin: "6rem auto" }}>
       <Box
         style={{
-          textAlign: "center",
+          textAlign: "left",
+          marginBottom: "2rem",
         }}
       >
         <Subheading title="Our Values" />
       </Box>
       <Space h="xl" />
-      <Space h="xl" />
 
       <Box className={classes.valuesContainer}>
-        {values.map((value, index) => (
+        {ourValues.map((value, index) => (
           <Paper
             key={value.title}
             radius="lg"

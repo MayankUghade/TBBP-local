@@ -13,7 +13,7 @@ import PrimaryBtn from "../UI/Buttons/PrimaryBtn";
 const links = [
   { link: "/", label: "Home" },
   { link: "/about", label: "About" },
-  { link: "/services", label: "Services" },
+  // { link: "/services", label: "Services" },
   // { link: "/gallery", label: "Gallery" },
   // { link: "/contactus", label: "Contact Us" },
 ];
