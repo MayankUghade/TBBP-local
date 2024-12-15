@@ -8,8 +8,6 @@ import {
   Text,
   Title,
 } from "@mantine/core";
-import ServiceCard from "../UI/Cards/ServiceCard";
-import { useQuery } from "@tanstack/react-query";
 import { axiosInstance } from "lib/axios";
 import classes from "./styles.module.css";
 
@@ -18,7 +16,6 @@ import ServiceTabs from "./ServiceTabs";
 import ServicesAll from "./ServicesAll";
 import WhyUs from "../WhyUs/WhyUs";
 import ContactCTA from "../Landing/ContactCTA";
-import { useRouter } from "next/router";
 export interface ServicesProps {
   id: string;
   name: string;

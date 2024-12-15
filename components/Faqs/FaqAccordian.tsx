@@ -2,8 +2,6 @@
 import { Accordion, Text } from "@mantine/core";
 import classes from "./styles.module.css";
 import { IconPlus } from "@tabler/icons-react";
-import { useQuery } from "@tanstack/react-query";
-import { axiosInstance } from "lib/axios";
 import faqs from "./data.json";
 
 interface FaqProps {
@@ -12,18 +10,8 @@ interface FaqProps {
 }
 
 const FaqAccordian = () => {
-  // const { isPending, isSuccess, isError, data } = useQuery({
-  //   queryKey: ["faq"],
-  //   queryFn: async (): Promise<FaqProps[]> => {
-  //     const res = await axiosInstance.get("/faq/");
-  //     return res.data;
-  //   },
-  // });
-
   return (
     <>
-      {/* {isPending && <Text c="dimmed">Loading data...</Text>}
-      {isError && <Text c="red">Oops! Error in loading FAQs :(</Text>} */}
       <Accordion
         classNames={{
           chevron: classes.chevron,
