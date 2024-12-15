@@ -9,7 +9,12 @@ interface PrimaryBtnProps
 
 const PrimaryBtn = ({ children, ...props }: PrimaryBtnProps) => {
   return (
-    <Button classNames={classes} {...props}>
+    <Button
+      classNames={{
+        root: classes.primaryBtn,
+      }}
+      {...props}
+    >
       {children}
     </Button>
   );

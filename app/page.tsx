@@ -3,7 +3,6 @@ import HomeAbout from "@/components/HomeAbout/HomeAbout";
 import Landing from "@/components/Landing/Landing";
 import Services from "@/components/HomeServices/HomeServices";
 import Statistics from "@/components/Statistics/Statistics";
-import Testimonials from "@/components/Testimonials/Testimonials";
 import Faqs from "@/components/Faqs/Faqs";
 
 export default function HomePage() {

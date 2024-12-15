@@ -1,4 +1,5 @@
 import { Text, Title } from "@mantine/core";
+import classes from "./styles.module.css";
 
 interface SubheadingProps {
   title: string;
@@ -11,14 +12,7 @@ interface SubheadingProps {
 const Subheading = ({ title, desc }: SubheadingProps) => {
   return (
     <>
-      <Title
-        order={1}
-        tt="capitalize"
-        style={{
-          color: `var(--brand-blue)`,
-          textTransform: "uppercase",
-        }}
-      >
+      <Title order={1} className={classes.subheading}>
         {title}
       </Title>
       {desc && (

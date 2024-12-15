@@ -4,28 +4,26 @@ import Subheading from "../UI/Subheading";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import classes from "./styles.module.css";
-import { values } from "./data.json";
+import { ourValues } from "lib/data/about";
 
 const OurValues = () => {
   return (
     <Container size="lg" style={{ margin: "6rem auto" }}>
       <Box
         style={{
-          textAlign: "center",
+          textAlign: "left",
+          marginBottom: "2rem",
         }}
       >
         <Subheading title="Our Values" />
       </Box>
       <Space h="xl" />
-      <Space h="xl" />
 
       <Box className={classes.valuesContainer}>
-        {values.map((value, index) => (
-          <Paper
+        {ourValues.map((value, index) => (
+          <motion.div
             key={value.title}
-            radius="lg"
             className={classes.valueCard}
-            component={motion.div}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{
               opacity: 1,
@@ -49,7 +47,7 @@ const OurValues = () => {
               </Title>
               <Text size="sm">{value.description}</Text>
             </Box>
-          </Paper>
+          </motion.div>
         ))}
       </Box>
     </Container>

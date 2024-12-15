@@ -2,7 +2,7 @@
 import { Box, Paper, Stack, Text, Title } from "@mantine/core";
 import classes from "../styles.module.css";
 import Image from "next/image";
-import { Variants, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface StatCardProps {
   label: string;
@@ -12,11 +12,8 @@ interface StatCardProps {
 
 const StatCard = ({ label, value, icon }: StatCardProps) => {
   return (
-    <Paper
-      px="xl"
-      py="lg"
+    <motion.div
       className={classes.statCard}
-      component={motion.div}
       initial={{ opacity: 0, y: 100 }}
       whileInView={{
         opacity: 1,
@@ -44,7 +41,7 @@ const StatCard = ({ label, value, icon }: StatCardProps) => {
         </Title>
         <Text className={classes.statDescription}>{label}</Text>
       </Stack>
-    </Paper>
+    </motion.div>
   );
 };
 

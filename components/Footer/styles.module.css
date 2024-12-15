@@ -1,13 +1,13 @@
 .footer {
-  padding-top: calc(var(--mantine-spacing-xl) * 1.5);
+  padding-top: calc(var(--mantine-spacing-xl) * 4);
   padding-bottom: var(--mantine-spacing-lg);
-  border-top: rem(1px) solid
-    light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-5));
+  background: url("/footer-vector.svg") 100% top no-repeat;
 }
 
 .logoBox {
-  max-width: rem(350px);
+  max-width: rem(400px);
   @media (max-width: $mantine-breakpoint-sm) {
+    max-width: rem(300px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,14 +15,11 @@
 }
 
 .logo {
-  width: 80px;
+  width: rem(120px);
   height: auto;
-  margin-bottom: 10px;
 }
 
 .description {
-  margin-top: rem(5px);
-
   @media (max-width: $mantine-breakpoint-sm) {
     margin-top: var(--mantine-spacing-xs);
     text-align: center;
@@ -66,7 +63,7 @@
 .quicklink {
   text-decoration: none;
   font-size: var(--mantine-font-size-sm);
-  color: var(--brand-indigo);
+  color: var(--mantine-color-dark-7);
 }
 
 .quicklink:hover {
@@ -77,11 +74,7 @@
 .socialLink {
   transition: color 0.2s ease;
   text-underline-offset: 2px;
-  color: var(--brand-maroon);
-}
-
-.socialLink:hover {
-  color: var(--mantine-color-red-7);
+  color: var(--brand-blue);
 }
 
 .afterFooter {

@@ -1,8 +1,9 @@
-.title {
+.heroHeading {
   font-size: rem(60px);
   line-height: 1.2;
   font-weight: 900;
   text-transform: uppercase;
+  margin: auto;
 
   @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(45px);

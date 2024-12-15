@@ -4,11 +4,11 @@ import classes from "./styles.module.css";
 import { motion } from "framer-motion";
 import { missiongVisionData } from "lib/data/home";
 
-const Mission = () => {
+const Vision = () => {
   return (
     <Container size="lg" mt="xl">
       <motion.div
-        className={classes.paperMission}
+        className={classes.paperVision}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{
           opacity: 1,
@@ -17,20 +17,16 @@ const Mission = () => {
             duration: 0.4,
           },
         }}
-        whileHover={{
-          scale: 1.05,
-          translateY: -10,
-        }}
-        viewport={{ once: true, amount: "some" }}
+        viewport={{ amount: "some" }}
       >
         <Title order={2} className={classes.title}>
-          {missiongVisionData.mission.title}
+          {missiongVisionData.vision.title}
         </Title>
-        <Text size="lg" mt={20} className={classes.description}>
-          {missiongVisionData.mission.content}
+        <Text size="lg" mt={20} className={classes.visionDescription}>
+          {missiongVisionData.vision.content}
         </Text>
       </motion.div>
     </Container>
   );
 };
-export default Mission;
+export default Vision;

@@ -1,0 +1,15 @@
+.dataGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,4 +1,8 @@
+import { SlGlobe } from "react-icons/sl";
 import { StaticImageData } from "next/image";
+import { FaSchool } from "react-icons/fa";
+import { IoMdSchool } from "react-icons/io";
+import { BsBriefcaseFill, BsFillAirplaneFill } from "react-icons/bs";
 
 export const landingSectionData = {
   title:
@@ -39,3 +43,31 @@ export const contactFooterData = {
     map: "https://maps.app.goo.gl/NhyFDbL3be4z6sYT6",
   },
 };
+
+export const serviceCategories = [
+  {
+    id: "grade-8-12",
+    name: "Grade (8th – 12th)",
+    icon: FaSchool,
+  },
+  {
+    id: "ug-pg",
+    name: "Undergraduate & Postgraduate",
+    icon: IoMdSchool,
+  },
+  {
+    id: "career-transition",
+    name: "Career Transition",
+    icon: BsBriefcaseFill,
+  },
+  {
+    id: "international-education-assitance",
+    name: "International Education Assistance",
+    icon: SlGlobe,
+  },
+  {
+    id: "aviation-career-program",
+    name: "Aviation Career Program",
+    icon: BsFillAirplaneFill,
+  },
+];

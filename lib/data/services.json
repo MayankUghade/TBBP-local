@@ -1,0 +1,253 @@
+{
+  "categories": {
+    "grade-8-12": {
+      "id": "grade-8-12",
+      "name": "Grade (8th – 12th)",
+      "tagline": "Unleash Your Potential",
+      "description": "At Big Brother, we're dedicated to nurturing the potential of young learners. Our comprehensive range of services for Grades 8-12 is designed to help students excel academically, explore career options, and build the skills they need to thrive in the future. From personalized mentorship to expert guidance on research and preparation, our team of experienced professionals is committed to providing the support you need to achieve your goals",
+      "serviceIds": [
+        "personalized-mentorship",
+        "research-and-preparation",
+        "career-planning"
+      ]
+    },
+    "ug-pg": {
+      "id": "ug-pg",
+      "name": "Undergraduate & Postgraduate",
+      "tagline": "Level Up Your Career: Your Path to Success",
+      "description": "Big Brother is your gateway to success. We facilitate access to exclusive, discounted skill-based courses from top MNCs. By curating industry-relevant programs, we equip you with the precise skills that employers demand. Our commitment to your career extends beyond course completion. Our dedicated placement assistance ensures a smooth transition into your dream job.",
+      "serviceIds": ["bridging-skill-gap", "job-search", "job-tool-kit"]
+    },
+    "career-transition": {
+      "id": "career-transition",
+      "name": "Career Transition",
+      "tagline": "Ready for a new challenge? We've got you covered.",
+      "description": "Your Next Chapter: Navigating Career Transitions with Confidence",
+      "serviceIds": ["career-transition"]
+    },
+    "international-education-assitance": {
+      "id": "international-education-assitance",
+      "name": "International Education Assistance",
+      "tagline": "Big Brother Program: Your Guide to Studying Abroad",
+      "description": "Your Global Passport to Academic Excellence",
+      "serviceIds": ["international-education-assitance"]
+    },
+    "aviation-career-program": {
+      "id": "aviation-career-program",
+      "name": "Aviation Career Program",
+      "tagline": "Elevate Your Aviation Career with CAACO",
+      "description": "Are you ready to take flight in the aviation industry?",
+      "serviceIds": ["aviation-career-program"]
+    }
+  },
+  "services": {
+    "personalized-mentorship": {
+      "id": "personalized-mentorship",
+      "heading": "Personalized Mentorship",
+      "desc": "Are you a young, ambitious student seeking guidance on your career journey? Look no further! Our personalized mentorship program is designed to help you explore your passions, identify your strengths, and make informed decisions about your future.",
+      "image": "/services/grade-8-12.svg",
+      "dataIds": ["data10"]
+    },
+    "research-and-preparation": {
+      "id": "research-and-preparation",
+      "heading": "Research and Preparation Assistance",
+      "desc": "Let us simplify the complex process of finding and applying to the right programs. Our dedicated team is here to guide you every step of the way. From comprehensive program research to personalized application support, we’ll ensure you’re well-prepared to achieve your academic goals.",
+      "image": "/services/research-prep.svg",
+      "dataIds": ["data13"]
+    },
+    "career-planning": {
+      "id": "career-planning",
+      "heading": "Career Planning",
+      "desc": " Unsure about your next steps? Our expert career counselors are here to help. We'll work with you to identify your passions, strengths, and goals, and then develop a tailored action plan to get you there.",
+      "image": "/services/career-planning.svg",
+      "dataIds": ["data17"]
+    },
+    "bridging-skill-gap": {
+      "id": "bridging-skill-gap",
+      "heading": "Bridging Skill Gap",
+      "desc": "Ready to take your career to the next level? Our Big Brother program offers personalized mentorship and practical training to help you bridge skill gaps and unlock your full potential.",
+      "image": "/services/bridge-skill-gap.svg",
+      "dataIds": ["data18"]
+    },
+    "job-search": {
+      "id": "job-search",
+      "heading": "Job Search strategies",
+      "desc": "Our expert guidance will help you navigate the competitive job market with confidence. From building a powerful professional network to mastering the art of social media, we'll equip you with the tools to land your dream job.",
+      "image": "/services/job-research-assist.svg",
+      "dataIds": ["data19"]
+    },
+    "job-tool-kit": {
+      "id": "job-tool-kit",
+      "heading": "Job Toolkit",
+      "desc": "Are you ready to take control of your job search? Our comprehensive toolkit provides you with the essential tools and strategies to land your dream job. From crafting powerful resumes to mastering the art of negotiation, we've got you covered. Let's unlock your full potential together.",
+      "image": "/services/job-tool-kit.svg",
+      "dataIds": ["data20"]
+    },
+    "career-transition": {
+      "id": "career-transition",
+      "heading": "Feeling stuck in your current role or considering a career change?",
+      "desc": "Our expert-led career transition support program is designed to help you navigate this exciting phase of your professional journey.",
+      "image": "/services/career-transition.svg",
+      "dataIds": ["data21"]
+    },
+    "international-education-assitance": {
+      "id": "international-education-assitance",
+      "heading": "Dream of studying abroad? Let Big Brother guide you.",
+      "desc": "Navigating the complexities of international education can be daunting. That's where we come in. Our dedicated team of experts is here to simplify the process and ensure a smooth transition to your dream destination.",
+      "image": "/services/career-transition.svg",
+      "dataIds": ["data22"]
+    },
+    "aviation-career-program": {
+      "id": "aviation-career-program",
+      "heading": "Course Details",
+      "desc": "Our Certification in Airport, Airline & Cargo Operations (CAACO) is your gateway to success. This comprehensive online program, delivered by industry experts from GMR Aero Academy, equips you with the essential skills to excel in airport, airline, and cargo operations.",
+      "image": "/services/career-transition.svg",
+      "dataIds": ["data23", "data24", "data25", "data26", "data27"]
+    }
+  },
+  "data": {
+    "data10": {
+      "id": "data10",
+      "type": "list",
+      "description": "What Our Mentorship Offers",
+      "content": [
+        "Expert Guidance: Connect with experienced professionals who will provide valuable insights and advice.",
+        "Personalized Career Exploration: Uncover your unique talents and interests through tailored assessments and discussions.",
+        "NEP-Aligned Course Selection: Receive recommendations on the best courses and programs to align with your goals and the New Education Policy.",
+        "Skill Development: Our skill development programs are designed to provide you with the essential capabilities to thrive in today's competitive job market."
+      ]
+    },
+    "data13": {
+      "id": "data13",
+      "type": "list",
+      "description": "Research and Preparation Assistance",
+      "content": [
+        "Comprehensive Program Research: Explore a wide range of programs and institutions to find the perfect fit.",
+        "Enrolment Assistance: Simplify the application process and ensure timely submission of documents.",
+        "Financial Aid Exploration: Identify potential scholarships, grants, and loans to fund your education.",
+        "Personalized Support: Receive tailored guidance and advice throughout the entire application process."
+      ]
+    },
+    "data17": {
+      "id": "data17",
+      "type": "list",
+      "description": "Career Planning",
+      "content": [
+        "Program Selection Expertise: Make informed decisions about your academic and career paths.",
+        "Personalized Action Plan Development: Create a customized roadmap to achieve your long-term goals."
+      ]
+    },
+    "data18": {
+      "id": "data18",
+      "type": "list",
+      "description": "Level Up Your Skills and Get Ahead!",
+      "content": [
+        "Expert Mentorship: Learn from industry leaders and experienced professionals.",
+        "Hands-On Learning: Gain practical experience through real-world projects and simulations.",
+        "Portfolio Building: Showcase your skills and accomplishments to potential employers."
+      ]
+    },
+    "data19": {
+      "id": "data19",
+      "type": "list",
+      "description": "Building Your Network, Building Your Future!",
+      "content": [
+        "Exclusive Industry Access: Connect with top companies and recruiters.",
+        "Strategic Networking Techniques: Build meaningful relationships with industry professionals.",
+        "Social Media Mastery: Leverage social media to enhance your personal brand and attract job opportunities."
+      ]
+    },
+    "data20": {
+      "id": "data20",
+      "type": "list",
+      "description": "Comprehensive Career Toolkit",
+      "content": [
+        "Resume and Cover Letter Powerhouse: Create compelling documents that highlight your skills and experiences.",
+        "Interview Preparation Arsenal: Ace your interviews with confidence and clarity.",
+        "Research and Networking Intelligence: Gain insights into industries and companies to make informed career decisions.",
+        "Self-Assessment Tools: Identify your strengths, weaknesses, and areas for improvement.",
+        "Salary Negotiation Strategies: Negotiate your worth and secure competitive compensation.",
+        "Personal Brand Development: Build a strong personal brand to stand out in the job market."
+      ]
+    },
+    "data21": {
+      "id": "data21",
+      "type": "list",
+      "description": "What We Offer",
+      "content": [
+        "Expert Mentorship: Receive personalized guidance from seasoned professionals who have successfully transitioned careers.",
+        "Career Assessment & Skill Gap Analysis: Identify your strengths, weaknesses, and areas for improvement.",
+        "Educational Opportunities: Explore relevant courses and certifications to enhance your skill set.",
+        "Resume Revamp: Create a powerful resume that showcases your unique value proposition.",
+        "Network Building: Connect with industry professionals and expand your professional network."
+      ]
+    },
+    "data22": {
+      "id": "data22",
+      "type": "list",
+      "description": "Our Services",
+      "content": [
+        "College & Program Matching: Identify the best-fit institutions and programs based on your academic goals and interests.",
+        "Stand-Out SOP: Craft compelling Statements of Purpose that highlight your unique qualities and experiences.",
+        "Stress-Free Applications: Streamline the application process with expert guidance and support.",
+        "Visa Support: Navigate the visa application process with ease, ensuring a successful outcome.",
+        "Financial Aid Exploration: Explore scholarship and financial aid opportunities to fund your studies abroad."
+      ]
+    },
+    "data23": {
+      "id": "data23",
+      "type": "list",
+      "description": "Curated Course Selection",
+      "content": [
+        "Certification in Airport, Airline and Cargo Operations (CAACO)",
+        "Certification in Customer Service (CCSE)",
+        "Certification in Corporate Readiness Programme (CCRP)"
+      ]
+    },
+    "data24": {
+      "id": "data24",
+      "type": "list",
+      "description": "What You'll Gain",
+      "content": [
+        "In-depth Knowledge: Master the fundamentals of airport, airline, and cargo operations.",
+        "Global Certification: Earn prestigious certifications from ICAO, IATA, and other recognized bodies.",
+        "Practical Skills: Develop real-world skills through hands-on training.",
+        "Career Advancement: Benefit from our dedicated placement assistance to secure exciting job opportunities both domestically and internationally."
+      ]
+    },
+    "data25": {
+      "id": "data25",
+      "type": "list",
+      "description": "Why Choose CAACO?",
+      "content": [
+        "Expert Faculty: Learn from industry veterans.",
+        "Flexible Learning: Online format allows for flexible learning.",
+        "Global Opportunities: Access to international placement opportunities.",
+        "Comprehensive Support: 100% Job Placement Assistance:",
+        "a) Domestic Opportunities: Connect with leading aviation companies across India.",
+        "b) International Prospects: Explore global career opportunities through our extensive network."
+      ]
+    },
+    "data26": {
+      "id": "data26",
+      "type": "paragraph",
+      "content": "Our collaboration with ATFS and GMR Aero Academy ensures a holistic training experience. With a strong focus on practical skills and career development, we empower you to achieve your aviation goals."
+    },
+    "data27": {
+      "id": "data27",
+      "type": "paragraph",
+      "content": "Don't miss this opportunity to soar to new heights in your aviation career. Enroll today and let us guide you towards a brighter future."
+    }
+  },
+  "serviceDataTemplate": {
+    "list": {
+      "type": "list",
+      "description": "",
+      "content": []
+    },
+    "paragraph": {
+      "type": "paragraph",
+      "content": ""
+    }
+  }
+}

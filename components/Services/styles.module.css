@@ -1,27 +1,110 @@
-.gridContainer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.gridContainer > div {
-  flex-basis: 30%;
-  height: max-content;
+.title {
+  color: var(--brand-blue);
+  text-align: center;
+  font-size: rem(48px);
+
+  @media screen and (max-width: $mantine-breakpoint-sm) {
+    font-size: rem(32px);
+  }
 }
 
-.inner {
-  composes: inner from "../AboutHero/styles.module.css";
-}
-.content {
-  composes: content from "../AboutHero/styles.module.css";
-}
-.title {
-  composes: title from "../AboutHero/styles.module.css";
+.tagline {
   color: var(--brand-indigo);
-  text-transform: uppercase;
+  text-align: center;
+  font-size: rem(24px);
+  margin-bottom: rem(32px);
+
+  @media screen and (max-width: $mantine-breakpoint-sm) {
+    font-size: rem(18px);
+  }
 }
-.highlight {
-  composes: highlight3 from "../AboutHero/styles.module.css";
+
+.description {
+  text-align: center;
+  max-width: rem(800px);
+  margin: 0 auto rem(30px);
 }
+
+/* section */
+.section {
+  padding: calc(var(--mantine-spacing-md) * 4) var(--mantine-spacing-md);
+
+  @media screen and (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column-reverse;
+  }
+}
+
+.sectionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: rem(32px);
+
+  @media screen and (max-width: $mantine-breakpoint-md) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.textContainer {
+  flex-basis: 60%;
+}
+
+.imageContainer {
+  justify-content: center;
+  align-items: flex-start;
+  padding: rem(16px);
+}
+
 .image {
-  composes: image from "../AboutHero/styles.module.css";
+  width: 350px;
+  height: 300px;
+  position: relative;
+  @media screen and (max-width: $mantine-breakpoint-sm) {
+    width: 200px;
+    height: 180px;
+  }
+  @media screen and (max-width: $mantine-breakpoint-lg) {
+    width: 320px;
+    height: 200px;
+  }
+}
+
+/* Tabs design --------- */
+.list {
+  position: relative;
+  margin-bottom: var(--mantine-spacing-md);
+}
+
+.indicator {
+  background-color: var(--mantine-color-white);
+  border-radius: var(--mantine-radius-lg);
+
+  border: 1px solid var(--mantine-color-gray-2);
+}
+
+.tab {
+  z-index: 1;
+  font-weight: 600;
+  background: var(--mantine-color-brand-0);
+  color: var(--mantine-color-indigo-5);
+  padding: var(--mantine-spacing-xl);
+  box-shadow: var(--mantine-shadow-md);
+  border-radius: var(--mantine-radius-lg);
+  margin: 0 var(--mantine-spacing-xs);
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: var(--brand-blue);
+    border: 1px solid var(--brand-blue);
+  }
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: center;
+  gap: var(--mantine-spacing-md);
+  position: relative;
+  bottom: -40px;
 }
