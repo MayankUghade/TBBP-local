@@ -48,7 +48,7 @@ const ServiceCategory = ({ slug }: { slug: string }) => {
       <Container size="lg" style={{ margin: "0 auto 5rem" }}>
         <Stack gap={10}>
           {/* Heading and tagline */}
-          <Stack gap={4} mt={16}>
+          <Stack gap={4} mt={36}>
             <Title className={classes.title}>{categorySelected.name}</Title>
             <Text className={classes.tagline}>{categorySelected.tagline}</Text>
           </Stack>

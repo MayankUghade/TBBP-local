@@ -94,14 +94,14 @@
       "id": "international-education-assitance",
       "heading": "Dream of studying abroad? Let Big Brother guide you.",
       "desc": "Navigating the complexities of international education can be daunting. That's where we come in. Our dedicated team of experts is here to simplify the process and ensure a smooth transition to your dream destination.",
-      "image": "/services/career-transition.svg",
+      "image": "/services/international-education.svg",
       "dataIds": ["data22"]
     },
     "aviation-career-program": {
       "id": "aviation-career-program",
       "heading": "Course Details",
       "desc": "Our Certification in Airport, Airline & Cargo Operations (CAACO) is your gateway to success. This comprehensive online program, delivered by industry experts from GMR Aero Academy, equips you with the essential skills to excel in airport, airline, and cargo operations.",
-      "image": "/services/career-transition.svg",
+      "image": "/services/aviation.svg",
       "dataIds": ["data23", "data24", "data25", "data26", "data27"]
     }
   },

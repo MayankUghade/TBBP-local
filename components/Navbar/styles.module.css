@@ -98,4 +98,5 @@
   align-items: center;
   justify-content: center;
   gap: rem(28px);
+  text-align: center;
 }

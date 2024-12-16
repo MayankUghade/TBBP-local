@@ -1,29 +1,10 @@
-.indicators {
-  bottom: -20px;
-}
+.categoriesContainer {
+  justify-content: center;
+  row-gap: 1;
+  column-gap: 2rem;
+  margin: rem(40px) rem(24px);
 
-.indicator {
-  width: 5px;
-  background-color: var(--mantine-color-red-1);
-  transition: background-color 0.2s ease;
-
-  &[data-active] {
-    background-color: var(--mantine-color-red-5);
-  }
-}
-
-.controls {
-  transition: opacity 150ms ease;
-  opacity: 0;
-}
-
-.root {
-  &:hover {
-    .controls {
-      opacity: 1;
-    }
-  }
-  &.is-inited {
-    justify-content: unset !important;
+  @media screen and (max-width: $mantine-breakpoint-md) {
+    margin: rem(40px) rem(18px);
   }
 }

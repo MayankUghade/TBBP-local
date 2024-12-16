@@ -3,6 +3,7 @@ import { Box, Container, Group, Text, Title } from "@mantine/core";
 import Subheading from "../UI/Subheading";
 import { serviceCategories } from "lib/data/home";
 import CategoryCard from "../UI/Cards/CategoryCard";
+import classes from "./styles.module.css";
 
 const HomeServices = () => {
   return (
@@ -14,15 +15,7 @@ const HomeServices = () => {
         />
         {/* Services Carousel */}
 
-        <Group
-          mt={40}
-          mx={24}
-          style={{
-            justifyContent: "center",
-            rowGap: "1",
-            columnGap: "2rem",
-          }}
-        >
+        <Group className={classes.categoriesContainer}>
           {serviceCategories.map((category) => (
             <CategoryCard
               key={category.id}
