@@ -17,7 +17,7 @@ const notFound = () => {
         />
         <div>
           <Title className={classes.title}>Something is not right...</Title>
-          <Text c="dimmed" size="md">
+          <Text c="grey.8" size="md">
             Page you are trying to open does not exist. You may have mistyped
             the address, or the page has been moved to another URL. If you think
             this is an error contact support.
@@ -29,6 +29,7 @@ const notFound = () => {
             className={classes.control}
             component={Link}
             href="/"
+            aria-label="Go back to home page"
           >
             Get back to home page
           </Button>

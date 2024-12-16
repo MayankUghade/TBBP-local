@@ -9,8 +9,9 @@ import {
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import ButtonGestureRotate from "lib/animations/ButtonGestureRotate";
-import { AiFillInstagram } from "react-icons/ai";
-import { FaFacebookF } from "react-icons/fa";
+import { INSTAGRAM_URL, LINKEDIN_URL } from "lib/data/constants";
+import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const Socials = () => {
   return (
@@ -25,7 +26,7 @@ const Socials = () => {
           size="xl"
           aria-label="Instagram"
           component="a"
-          href="https://www.instagram.com/bigbrother.in"
+          href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener"
         >
@@ -36,23 +37,28 @@ const Socials = () => {
           />
         </ActionIcon>
       </ButtonGestureRotate>
-      {/* <ButtonGestureRotate>
+      <ButtonGestureRotate>
         <ActionIcon
           variant="filled"
-          color="red"
-          size="lg"
+          style={{
+            background: "var(--brand-blue)",
+            borderRadius: "50%",
+          }}
+          size="xl"
           aria-label="LinkedIn"
           component="a"
-          href="https://www.linkedin.com/"
+          href={LINKEDIN_URL}
           target="_blank"
           rel="noopener"
         >
-          <IconBrandLinkedin
-            style={{ width: "70%", height: "70%" }}
-            stroke={1.5}
+          <FaLinkedinIn
+            style={{
+              fontSize: "1.5rem",
+            }}
           />
         </ActionIcon>
       </ButtonGestureRotate>
+      {/* 
       <ButtonGestureRotate>
         <ActionIcon
           variant="filled"

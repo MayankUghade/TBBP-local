@@ -1,6 +1,7 @@
-import { Button, ButtonProps } from "@mantine/core";
+import { ButtonProps } from "@mantine/core";
 import PrimaryBtn from "../UI/Buttons/PrimaryBtn";
 import Link from "next/link";
+import { contactUrl } from "lib/data/home";
 
 // CTA button for the landing page that redirects to the WhatsApp chat
 const ContactCTA = ({
@@ -12,12 +13,13 @@ const ContactCTA = ({
 }) => {
   return (
     <Link
-      href="https://api.whatsapp.com/send?phone=917028161277"
+      href={contactUrl}
       target="_blank"
       rel="noopener noreferrer"
       style={{
         width: "fit-content",
       }}
+      aria-label="Contact Us on WhatsApp"
     >
       <PrimaryBtn size={size}>{btnName}</PrimaryBtn>
     </Link>

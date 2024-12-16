@@ -12,11 +12,11 @@ interface SubheadingProps {
 const Subheading = ({ title, desc }: SubheadingProps) => {
   return (
     <>
-      <Title order={1} className={classes.subheading}>
+      <Title order={2} className={classes.subheading}>
         {title}
       </Title>
       {desc && (
-        <Text c="dimmed" mt="sm" className="sectionDescription">
+        <Text c="grey.8" mt="sm" className="sectionDescription">
           {desc}
         </Text>
       )}

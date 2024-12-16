@@ -60,6 +60,7 @@
       "heading": "Career Planning",
       "desc": " Unsure about your next steps? Our expert career counselors are here to help. We'll work with you to identify your passions, strengths, and goals, and then develop a tailored action plan to get you there.",
       "image": "/services/career-planning.svg",
+      "cta": null,
       "dataIds": ["data17"]
     },
     "bridging-skill-gap": {
@@ -67,6 +68,7 @@
       "heading": "Bridging Skill Gap",
       "desc": "Ready to take your career to the next level? Our Big Brother program offers personalized mentorship and practical training to help you bridge skill gaps and unlock your full potential.",
       "image": "/services/bridge-skill-gap.svg",
+      "cta": null,
       "dataIds": ["data18"]
     },
     "job-search": {
@@ -74,6 +76,7 @@
       "heading": "Job Search strategies",
       "desc": "Our expert guidance will help you navigate the competitive job market with confidence. From building a powerful professional network to mastering the art of social media, we'll equip you with the tools to land your dream job.",
       "image": "/services/job-research-assist.svg",
+      "cta": null,
       "dataIds": ["data19"]
     },
     "job-tool-kit": {
@@ -81,6 +84,7 @@
       "heading": "Job Toolkit",
       "desc": "Are you ready to take control of your job search? Our comprehensive toolkit provides you with the essential tools and strategies to land your dream job. From crafting powerful resumes to mastering the art of negotiation, we've got you covered. Let's unlock your full potential together.",
       "image": "/services/job-tool-kit.svg",
+      "cta": null,
       "dataIds": ["data20"]
     },
     "career-transition": {
@@ -88,6 +92,7 @@
       "heading": "Feeling stuck in your current role or considering a career change?",
       "desc": "Our expert-led career transition support program is designed to help you navigate this exciting phase of your professional journey.",
       "image": "/services/career-transition.svg",
+      "cta": null,
       "dataIds": ["data21"]
     },
     "international-education-assitance": {
@@ -95,6 +100,7 @@
       "heading": "Dream of studying abroad? Let Big Brother guide you.",
       "desc": "Navigating the complexities of international education can be daunting. That's where we come in. Our dedicated team of experts is here to simplify the process and ensure a smooth transition to your dream destination.",
       "image": "/services/international-education.svg",
+      "cta": null,
       "dataIds": ["data22"]
     },
     "aviation-career-program": {
@@ -102,6 +108,7 @@
       "heading": "Course Details",
       "desc": "Our Certification in Airport, Airline & Cargo Operations (CAACO) is your gateway to success. This comprehensive online program, delivered by industry experts from GMR Aero Academy, equips you with the essential skills to excel in airport, airline, and cargo operations.",
       "image": "/services/aviation.svg",
+      "cta": "https://forms.gle/Xp5oHJPmGgicevaH8",
       "dataIds": ["data23", "data24", "data25", "data26", "data27"]
     }
   },

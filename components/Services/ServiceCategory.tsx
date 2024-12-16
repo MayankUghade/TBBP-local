@@ -1,13 +1,5 @@
 "use client";
-import {
-  Box,
-  Container,
-  SimpleGrid,
-  Skeleton,
-  Stack,
-  Text,
-  Title,
-} from "@mantine/core";
+import { Box, Container, Stack, Text, Title } from "@mantine/core";
 import classes from "./styles.module.css";
 
 import servicesData from "../../lib/data/services.json";
@@ -15,8 +7,8 @@ import ServiceTabs from "./ServiceTabs";
 import ServicesAll from "./ServicesAll";
 import WhyUs from "../WhyUs/WhyUs";
 import ContactCTA from "../Landing/ContactCTA";
-import { useRouter } from "next/router";
 import { useMediaQuery } from "@mantine/hooks";
+import { motion } from "framer-motion";
 export interface ServicesProps {
   id: string;
   name: string;
@@ -48,10 +40,28 @@ const ServiceCategory = ({ slug }: { slug: string }) => {
       <Container size="lg" style={{ margin: "0 auto 5rem" }}>
         <Stack gap={10}>
           {/* Heading and tagline */}
-          <Stack gap={4} mt={36}>
-            <Title className={classes.title}>{categorySelected.name}</Title>
-            <Text className={classes.tagline}>{categorySelected.tagline}</Text>
-          </Stack>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.4,
+              },
+            }}
+            whileHover={{
+              scale: 1.05,
+              translateY: -10,
+            }}
+            viewport={{ once: true, amount: "some" }}
+          >
+            <Stack gap={4} mt={36}>
+              <Title className={classes.title}>{categorySelected.name}</Title>
+              <Text className={classes.tagline}>
+                {categorySelected.tagline}
+              </Text>
+            </Stack>
+          </motion.div>
           {/* Description */}
           <Text c="grey.7" mt="md" className={classes.description}>
             {categorySelected.description}

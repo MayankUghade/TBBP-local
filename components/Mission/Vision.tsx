@@ -17,6 +17,7 @@ const Vision = () => {
             duration: 0.4,
           },
         }}
+        whileHover={{ scale: 1.05 }}
         viewport={{ amount: "some" }}
       >
         <Title order={2} className={classes.title}>

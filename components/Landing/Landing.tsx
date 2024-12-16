@@ -12,7 +12,7 @@ const Landing = () => {
       <div className={classes.inner}>
         <Stack className={classes.content} gap="md">
           <ColorGradeHeading />
-          <Text c="gray.7" className={classes.description}>
+          <Text c="gray.8" className={classes.description}>
             {landingSectionData.title}
           </Text>
           <ContactCTA size="lg" />

@@ -93,6 +93,7 @@
 
 .statTitle {
   font-size: rem(42px);
+  font-weight: 600;
 
   @media (max-width: em(1024px)) {
     font-size: rem(32px);

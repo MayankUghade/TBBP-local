@@ -4,70 +4,17 @@ import {
   Container,
   ActionIcon,
   Group,
-  rem,
-  Button,
   Anchor,
   Tooltip,
   Box,
 } from "@mantine/core";
-import {
-  IconBrandInstagram,
-  IconArrowUp,
-  IconBrandLinkedin,
-  IconBrandFacebook,
-  IconBrandX,
-  IconArrowNarrowRight,
-} from "@tabler/icons-react";
+import { IconArrowUp } from "@tabler/icons-react";
 import classes from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useWindowScroll } from "@mantine/hooks";
 import ButtonGestureRotate from "lib/animations/ButtonGestureRotate";
-import { AiFillInstagram } from "react-icons/ai";
-
-const footerNav = {
-  title: "Quick Links",
-  links: [
-    { label: "Home", link: "/" },
-    { label: "About", link: "/about" },
-    { label: "Services", link: "/services" },
-    // { label: "Gallery", link: "/gallery" },
-  ],
-};
-
-const footerContact = {
-  title: "Get In Touch",
-  links: [
-    { label: "Contact Us", link: "/contactus" },
-    // { label: "Write a Review", link: "/user-review" },
-  ],
-};
-
-const footerSocials = {
-  title: "Follow Us",
-  links: [
-    // {
-    //   label: "Twitter",
-    //   link: "https://twitter.com",
-    //   icon: <IconBrandX />,
-    // },
-    {
-      label: "Instagram",
-      link: "https://www.instagram.com/bigbrother.in",
-      icon: <AiFillInstagram fontSize={24} />,
-    },
-    // {
-    //   label: "LinkedIn",
-    //   link: "https://linkedin.com",
-    //   icon: <IconBrandLinkedin />,
-    // },
-    // {
-    //   label: "Facebook",
-    //   link: "https://facebook.com",
-    //   icon: <IconBrandFacebook />,
-    // },
-  ],
-};
+import { footerDesc, footerNav, footerSocials } from "lib/data/footer";
 
 // component to render footer links
 const FooterLinks = () => {
@@ -77,7 +24,7 @@ const FooterLinks = () => {
         <Text size="sm" tt="uppercase" fw="600" c="brand">
           {footerSocials.title}
         </Text>
-        <ul className={classes.quicklinks}>
+        <ul className={classes.quicklinks} style={{ gap: "1.2rem" }}>
           {footerSocials.links.map((link) => (
             <li key={link.label}>
               <Group gap={10} align="center" className={classes.socialLink}>
@@ -145,9 +92,8 @@ const Footer = () => {
               className={classes.logo}
               alt="Big Brother logo"
             />
-            <Text size="sm" fw={500} c="dimmed" className={classes.description}>
-              We are your dedicated partners in journey towards career success
-              and personal development.
+            <Text size="sm" fw={500} c="grey.8" className={classes.description}>
+              {footerDesc}
             </Text>
           </div>
           <div className={classes.groups}>
@@ -180,7 +126,7 @@ const Footer = () => {
                   variant="filled"
                   size="xl"
                   radius="xl"
-                  aria-label="Back to top"
+                  aria-label="Navigate Back to top"
                   style={{
                     backgroundColor: "var(--brand-indigo)",
                   }}

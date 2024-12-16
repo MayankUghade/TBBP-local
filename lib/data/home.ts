@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image";
 import { FaSchool } from "react-icons/fa";
 import { IoMdSchool } from "react-icons/io";
 import { BsBriefcaseFill, BsFillAirplaneFill } from "react-icons/bs";
+import { CONTACT_URL } from "./constants";
 
 export const landingSectionData = {
   title:
@@ -27,7 +28,7 @@ export const missiongVisionData = {
   },
 };
 
-export const contactUrl = "https://api.whatsapp.com/send?phone=917093116004";
+export const contactUrl = CONTACT_URL;
 
 export const contactFooterData = {
   heading: "Take the Next Step.",

@@ -51,6 +51,8 @@
 }
 
 .imageContainer {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: rem(16px);

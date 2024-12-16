@@ -17,7 +17,7 @@ const AboutHero = () => {
               textIndigo="your guide to"
               textRed="brighter future"
             />
-            <Text c="gray.7" className={classes.description}>
+            <Text c="gray.8" className={classes.description}>
               Big Brother connects students with industry experts for
               personalized mentorship. Get the guidance and support you need to
               succeed at every step of your academic journey by your mentors.

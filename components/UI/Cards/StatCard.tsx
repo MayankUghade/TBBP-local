@@ -36,9 +36,9 @@ const StatCard = ({ label, value, icon }: StatCardProps) => {
         alt={`Illustration for ${value}`}
       />
       <Stack className={classes.statContent}>
-        <Title order={2} c="brand" className={classes.statTitle}>
+        <Text c="brand" className={classes.statTitle}>
           {value}
-        </Title>
+        </Text>
         <Text className={classes.statDescription}>{label}</Text>
       </Stack>
     </motion.div>

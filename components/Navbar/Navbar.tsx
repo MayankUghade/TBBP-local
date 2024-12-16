@@ -20,6 +20,7 @@ import { usePathname } from "next/navigation";
 import ContactModal from "../Modals/ContactModal";
 import PrimaryBtn from "../UI/Buttons/PrimaryBtn";
 import servicesData from "../../lib/data/services.json";
+import { contactUrl } from "lib/data/home";
 
 const links = [
   { link: "/", label: "Home" },
@@ -98,11 +99,7 @@ function Navbar() {
             </Menu>
 
             {/* TODO: Add whatsapp link here */}
-            <Link
-              href="https://api.whatsapp.com/send?phone=917093116004"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href={contactUrl} target="_blank" rel="noopener noreferrer">
               <PrimaryBtn>Contact Us</PrimaryBtn>
             </Link>
           </Group>
@@ -155,7 +152,9 @@ function Navbar() {
                 </Link>
               ))
             }
-            <PrimaryBtn mt={20}>Contact Us</PrimaryBtn>
+            <Link href={contactUrl} target="_blank" rel="noopener noreferrer">
+              <PrimaryBtn mt={20}>Contact Us</PrimaryBtn>
+            </Link>
           </Drawer>
         </Container>
       </header>
