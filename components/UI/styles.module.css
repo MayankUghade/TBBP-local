@@ -217,10 +217,10 @@
 
 /* Category cards ----------- */
 .categoryCard {
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   padding: 9.86047px 14.7907px;
-  gap: 19.72px;
+  gap: 18px;
 
   background: linear-gradient(
     265.18deg,
@@ -234,6 +234,8 @@
   text-decoration: none;
   color: white;
   transition: background 0.3s ease-in-out;
+  flex: 1 0;
+  flex-wrap: nowrap;
 }
 
 .categoryCard:hover {
@@ -245,8 +247,10 @@
   justify-content: center;
   align-items: center;
   padding: 7.39535px;
+  min-width: 44.37px;
   width: 44.37px;
   height: 44.37px;
+  flex-basis: 44.37px;
 
   background: #ffffff;
   border-radius: 123.256px;
