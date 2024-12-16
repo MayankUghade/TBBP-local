@@ -79,36 +79,33 @@ const FooterLinks = () => {
 const Footer = () => {
   const [scroll, scrollTo] = useWindowScroll();
   return (
-    <>
-      <Box className={classes.footerWrapper}></Box>
-
-      <footer className={classes.footer}>
-        <Container size="lg" className={classes.inner}>
-          <div className={classes.logoBox}>
-            <Image
-              src="/logo.svg"
-              width={200}
-              height={140}
-              className={classes.logo}
-              alt="Big Brother logo"
-            />
-            <Text size="sm" fw={500} c="grey.8" className={classes.description}>
-              {footerDesc}
-            </Text>
-          </div>
-          <div className={classes.groups}>
-            <FooterLinks />
-          </div>
-        </Container>
-
-        {/* after footer */}
-        <Container size="lg" className={classes.afterFooter}>
-          <Text c="brand">
-            The Big Brother Program | © {new Date().getFullYear()} All Rights
-            Reserved.
+    <footer className={classes.footer}>
+      <Container size="lg" className={classes.inner}>
+        <div className={classes.logoBox}>
+          <Image
+            src="/logo.svg"
+            width={200}
+            height={140}
+            className={classes.logo}
+            alt="Big Brother logo"
+          />
+          <Text size="sm" fw={500} c="grey.8" className={classes.description}>
+            {footerDesc}
           </Text>
-          <Box className={classes.afterFooterAction}>
-            {/* <Button
+        </div>
+        <div className={classes.groups}>
+          <FooterLinks />
+        </div>
+      </Container>
+
+      {/* after footer */}
+      <Container size="lg" className={classes.afterFooter}>
+        <Text c="brand">
+          The Big Brother Program | © {new Date().getFullYear()} All Rights
+          Reserved.
+        </Text>
+        <Box className={classes.afterFooterAction}>
+          {/* <Button
             component={Link}
             href="/user-review"
             variant="subtle"
@@ -117,32 +114,31 @@ const Footer = () => {
           >
             Write us a review
           </Button> */}
-            <ButtonGestureRotate>
-              <Tooltip
-                label="Back to Top"
-                transitionProps={{ transition: "slide-up" }}
+          <ButtonGestureRotate>
+            <Tooltip
+              label="Back to Top"
+              transitionProps={{ transition: "slide-up" }}
+            >
+              <ActionIcon
+                variant="filled"
+                size="xl"
+                radius="xl"
+                aria-label="Navigate Back to top"
+                style={{
+                  backgroundColor: "var(--brand-indigo)",
+                }}
+                onClick={() => scrollTo({ y: 0 })}
               >
-                <ActionIcon
-                  variant="filled"
-                  size="xl"
-                  radius="xl"
-                  aria-label="Navigate Back to top"
-                  style={{
-                    backgroundColor: "var(--brand-indigo)",
-                  }}
-                  onClick={() => scrollTo({ y: 0 })}
-                >
-                  <IconArrowUp
-                    style={{ width: "70%", height: "70%" }}
-                    stroke={1.5}
-                  />
-                </ActionIcon>
-              </Tooltip>
-            </ButtonGestureRotate>
-          </Box>
-        </Container>
-      </footer>
-    </>
+                <IconArrowUp
+                  style={{ width: "70%", height: "70%" }}
+                  stroke={1.5}
+                />
+              </ActionIcon>
+            </Tooltip>
+          </ButtonGestureRotate>
+        </Box>
+      </Container>
+    </footer>
   );
 };
 

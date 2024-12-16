@@ -1,21 +1,35 @@
 "use client";
-import { Box, Group, Text } from "@mantine/core";
+import { Box, Group, Stack, Text } from "@mantine/core";
 import Link from "next/link";
 import classes from "../styles.module.css";
 import { color } from "framer-motion";
+import Image from "next/image";
 
-const CategoryCard = ({ name, link, icon }: any) => {
+const CategoryCard = ({ name, link, icon, description }: any) => {
   let hrefLink = `/services/${link}`;
   if (link === "#") hrefLink = "/#";
 
   return (
-    <Link href={hrefLink} style={{ textDecoration: "none" }}>
-      <Group gap={10} className={classes.categoryCard}>
-        <Box className={classes.categoryIcon}>
-          {icon({ style: { fontSize: "1.4rem", color: "var(--brand-blue)" } })}
-        </Box>
-        <Text style={{ textDecoration: "none" }}>{name}</Text>
-      </Group>
+    <Link
+      href={hrefLink}
+      style={{ textDecoration: "none", height: "100%", display: "flex" }}
+    >
+      <div className={classes.categoryCard}>
+        <Image src={icon} width={60} height={60} alt={name + " icon"} />
+        <Stack
+          gap={16}
+          style={{
+            alignItems: "flex-start",
+          }}
+        >
+          <Text fw={600} c="indigo.5" size="24px">
+            {name}
+          </Text>
+          <Text c="dark" size="sm">
+            {description}
+          </Text>
+        </Stack>
+      </div>
     </Link>
   );
 };

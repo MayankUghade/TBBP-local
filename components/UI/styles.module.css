@@ -217,30 +217,27 @@
 }
 
 /* Category cards ----------- */
+
 .categoryCard {
-  /* justify-content: center; */
-  align-items: center;
-  padding: 9.86047px 14.7907px;
-  gap: 18px;
-
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  width: 100%;
   background: linear-gradient(
-    265.18deg,
-    #ce3e50 0%,
-    #472f7b 32.4%,
-    #1f298b 66.32%,
-    #0173bc 101.25%
+    256.32deg,
+    rgba(206, 62, 80, 0.08) 4.02%,
+    rgba(71, 47, 123, 0.08) 33.64%,
+    rgba(31, 41, 139, 0.08) 64.65%,
+    rgba(1, 115, 188, 0.08) 96.58%
   );
-  background-size: 100% auto;
-  border-radius: 123.256px;
+  border-radius: var(--mantine-radius-default);
   text-decoration: none;
-  color: white;
   transition: background 0.3s ease-in-out;
-  flex: 1 0;
-  flex-wrap: nowrap;
-}
-
-.categoryCard:hover {
-  background-size: 200% auto;
+  text-align: start;
+  gap: 42px;
 }
 
 .categoryIcon {

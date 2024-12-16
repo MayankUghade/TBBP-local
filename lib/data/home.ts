@@ -1,9 +1,12 @@
-import { SlGlobe } from "react-icons/sl";
-import { StaticImageData } from "next/image";
-import { FaSchool } from "react-icons/fa";
-import { IoMdSchool } from "react-icons/io";
-import { BsBriefcaseFill, BsFillAirplaneFill } from "react-icons/bs";
+import servicesData from "./services.json";
 import { CONTACT_URL } from "./constants";
+import {
+  aviation,
+  careerTransition,
+  ugPg,
+  internationalEdu,
+  grade8_12,
+} from "assets/services";
 
 export const landingSectionData = {
   title:
@@ -45,30 +48,37 @@ export const contactFooterData = {
   },
 };
 
+const categories = servicesData.categories;
+
 export const serviceCategories = [
   {
-    id: "grade-8-12",
-    name: "Grade (8th – 12th)",
-    icon: FaSchool,
+    id: categories["grade-8-12"].id,
+    name: categories["grade-8-12"].name,
+    description: categories["grade-8-12"].description,
+    icon: grade8_12,
   },
   {
-    id: "ug-pg",
-    name: "Undergraduate & Postgraduate",
-    icon: IoMdSchool,
+    id: categories["ug-pg"].id,
+    name: categories["ug-pg"].name,
+    description: categories["ug-pg"].description,
+    icon: ugPg,
   },
   {
-    id: "career-transition",
-    name: "Career Transition",
-    icon: BsBriefcaseFill,
+    id: categories["career-transition"].id,
+    name: categories["career-transition"].name,
+    description: categories["career-transition"].description,
+    icon: careerTransition,
   },
   {
-    id: "international-education-assitance",
-    name: "International Education Assistance",
-    icon: SlGlobe,
+    id: categories["international-education-assitance"].id,
+    name: categories["international-education-assitance"].name,
+    description: categories["international-education-assitance"].description,
+    icon: internationalEdu,
   },
   {
-    id: "aviation-career-program",
-    name: "Aviation Career Program",
-    icon: BsFillAirplaneFill,
+    id: categories["aviation-career-program"].id,
+    name: categories["aviation-career-program"].name,
+    description: categories["aviation-career-program"].description,
+    icon: aviation,
   },
 ];

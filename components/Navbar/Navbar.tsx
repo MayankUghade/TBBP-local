@@ -17,7 +17,6 @@ import classes from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import ContactModal from "../Modals/ContactModal";
 import PrimaryBtn from "../UI/Buttons/PrimaryBtn";
 import servicesData from "../../lib/data/services.json";
 import { contactUrl } from "lib/data/home";
@@ -109,6 +108,7 @@ function Navbar() {
             onClick={openDrawer}
             hiddenFrom="xs"
             size="sm"
+            aria-label="Toggle navigation"
           />
           <Drawer
             opened={drawerOpened}
