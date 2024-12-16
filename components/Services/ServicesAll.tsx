@@ -43,6 +43,7 @@ const ServicesAll = ({ services }: { services: ServiceType[] }) => {
 
                   return (
                     <motion.div
+                      key={dataId + "-data"}
                       initial={{ opacity: 0, y: 100 }}
                       whileInView={{
                         opacity: 1,
@@ -53,7 +54,7 @@ const ServicesAll = ({ services }: { services: ServiceType[] }) => {
                       }}
                       viewport={{ amount: "some" }}
                     >
-                      <ServiceDescription key={dataId + "-data"} {...data} />
+                      <ServiceDescription {...data} />
                     </motion.div>
                   );
                 })}

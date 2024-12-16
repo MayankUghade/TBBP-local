@@ -46,6 +46,7 @@
       "heading": "Personalized Mentorship",
       "desc": "Are you a young, ambitious student seeking guidance on your career journey? Look no further! Our personalized mentorship program is designed to help you explore your passions, identify your strengths, and make informed decisions about your future.",
       "image": "/services/grade-8-12.svg",
+      "cta": null,
       "dataIds": ["data10"]
     },
     "research-and-preparation": {
@@ -53,6 +54,7 @@
       "heading": "Research and Preparation Assistance",
       "desc": "Let us simplify the complex process of finding and applying to the right programs. Our dedicated team is here to guide you every step of the way. From comprehensive program research to personalized application support, we’ll ensure you’re well-prepared to achieve your academic goals.",
       "image": "/services/research-prep.svg",
+      "cta": null,
       "dataIds": ["data13"]
     },
     "career-planning": {
