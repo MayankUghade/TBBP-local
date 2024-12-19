@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Box, Button, Container, Stack, Text, Title } from "@mantine/core";
+import { Box, Container, Stack, Text, Title } from "@mantine/core";
 import servicesData from "../../lib/data/services.json";
 import ServiceDescription, { ServiceDescriptionPropTypes } from "./Description";
 import classes from "./styles.module.css";

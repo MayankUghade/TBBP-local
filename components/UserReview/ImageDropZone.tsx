@@ -1,9 +1,8 @@
-import { IconUpload, IconPhoto, IconX } from "@tabler/icons-react";
-import { Dropzone, FileWithPath, IMAGE_MIME_TYPE } from "@mantine/dropzone";
+import { IconUpload, IconX } from "@tabler/icons-react";
+import { Dropzone, IMAGE_MIME_TYPE } from "@mantine/dropzone";
 import { UseFormReturnType } from "@mantine/form";
 import { ReviewFormProps } from "./ReviewForm";
 import { Group, rem, Text } from "@mantine/core";
-import { useState } from "react";
 import Image from "next/image";
 import classes from "./styles.module.css";
 import { IconUserSquareRounded } from "@tabler/icons-react";

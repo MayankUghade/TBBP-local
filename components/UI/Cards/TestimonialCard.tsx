@@ -1,6 +1,5 @@
 import { Avatar, Box, Group, Paper, Text } from "@mantine/core";
 import classes from "../styles.module.css";
-import { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 
 interface TestimonialCardProps {

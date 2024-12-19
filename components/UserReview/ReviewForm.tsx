@@ -1,12 +1,5 @@
 "use client";
-import {
-  Box,
-  TextInput,
-  Textarea,
-  SimpleGrid,
-  Group,
-  Button,
-} from "@mantine/core";
+import { Box, TextInput, Textarea, Group, Button } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import ImageDropZone from "./ImageDropZone";
 import classes from "./styles.module.css";

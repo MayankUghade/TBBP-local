@@ -1,4 +1,4 @@
-import { Container, Title, Button, Group, Text, Stack } from "@mantine/core";
+import { Container, Text, Stack } from "@mantine/core";
 import classes from "./styles.module.css";
 import ContactCTA from "./ContactCTA";
 import LandingImage from "./LandingImage";

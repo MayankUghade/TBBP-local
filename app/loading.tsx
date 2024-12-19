@@ -1,4 +1,4 @@
-import { Box, Group, Loader } from "@mantine/core";
+import { Group, Loader } from "@mantine/core";
 
 const loading = () => {
   return (

@@ -3,7 +3,6 @@ import Image from "next/image";
 import classes from "../styles.module.css";
 import { useMouse } from "@mantine/hooks";
 import { useRef, useState } from "react";
-import { motion } from "framer-motion";
 
 interface ServiceCardProps {
   img: string;

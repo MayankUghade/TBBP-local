@@ -1,4 +1,4 @@
-import { Box, Button, Text, Title } from "@mantine/core";
+import { Box, Text, Title } from "@mantine/core";
 import classes from "./styles.module.css";
 import CTA from "./CTA";
 

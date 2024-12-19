@@ -3,7 +3,6 @@ import { FloatingIndicator, Tabs } from "@mantine/core";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import classes from "./styles.module.css";
-import { useEffect } from "react";
 
 const ServiceTabs = ({
   tabs,

@@ -1,8 +1,7 @@
 "use client";
-import { Box, Group, Stack, Text } from "@mantine/core";
+import { Stack, Text } from "@mantine/core";
 import Link from "next/link";
 import classes from "../styles.module.css";
-import { color } from "framer-motion";
 import Image from "next/image";
 
 const CategoryCard = ({ name, link, icon, description }: any) => {

@@ -1,5 +1,5 @@
 "use client";
-import { Container, Paper, Text, Title } from "@mantine/core";
+import { Container, Text, Title } from "@mantine/core";
 import classes from "./styles.module.css";
 import { motion } from "framer-motion";
 import { missiongVisionData } from "lib/data/home";

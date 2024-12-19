@@ -1,4 +1,4 @@
-import { Container, SimpleGrid } from "@mantine/core";
+import { Container } from "@mantine/core";
 import StatCard from "../UI/Cards/StatCard";
 import classes from "./styles.module.css";
 

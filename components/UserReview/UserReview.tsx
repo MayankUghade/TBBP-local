@@ -1,7 +1,6 @@
 import { Container, Text, Title } from "@mantine/core";
 import classes from "./styles.module.css";
 import reviewImage from "../../assets/review.svg";
-import Image from "next/image";
 import ReviewForm from "./ReviewForm";
 import LandingImage from "../Landing/LandingImage";
 

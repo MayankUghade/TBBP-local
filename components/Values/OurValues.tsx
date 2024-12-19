@@ -1,5 +1,5 @@
 "use client";
-import { Box, Container, Paper, Space, Text, Title } from "@mantine/core";
+import { Box, Container, Space, Text, Title } from "@mantine/core";
 import Subheading from "../UI/Subheading";
 import { motion } from "framer-motion";
 import Image from "next/image";

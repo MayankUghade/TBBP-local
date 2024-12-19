@@ -1,5 +1,5 @@
 "use client";
-import { Box, Paper, Stack, Text, Title } from "@mantine/core";
+import { Stack, Text } from "@mantine/core";
 import classes from "../styles.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
