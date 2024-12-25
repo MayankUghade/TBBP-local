@@ -22,7 +22,7 @@
 }
 
 .header {
-  height: rem(80px);
+  height: var(--header-height);
   max-width: rem(var(--max-width));
   margin: auto;
   width: 100%;
@@ -39,7 +39,7 @@
   right: 0;
   left: 0;
   width: 100%;
-  height: rem(80px);
+  height: var(--header-height);
   margin: 0 auto;
   z-index: 100;
   animation-duration: 0.7s;
@@ -53,8 +53,19 @@
   }
 }
 
+.headerSpaceNone {
+  transform: scale(0);
+  transition: scale 0.7s ease-in-out 0.7s;
+}
+
 .showHeaderSpace {
-  height: rem(80px);
+  transform: scale(1);
+  height: var(--header-height);
+
+  /* Desktop */
+  @media (min-width: 768px) {
+    height: var(--sticky-header-margin-desktop);
+  }
 }
 
 .inner {

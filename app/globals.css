@@ -13,6 +13,9 @@
     rgba(31, 41, 139, 0.08) 64.65%,
     rgba(1, 115, 188, 0.08) 96.58%
   );
+
+  --header-height: rem(80px);
+  --sticky-header-margin-desktop: rem(120px); /* 80px height + 40px padding */
 }
 
 html,

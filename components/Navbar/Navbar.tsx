@@ -158,7 +158,11 @@ function Navbar() {
           </Drawer>
         </Container>
       </header>
-      <Box className={scroll.y > 200 ? classes.showHeaderSpace : undefined} />
+      <Box
+        className={
+          scroll.y > 200 ? classes.showHeaderSpace : classes.headerSpaceNone
+        }
+      />
     </>
   );
 }

@@ -89,7 +89,7 @@ const Footer = () => {
             className={classes.logo}
             alt="Big Brother logo"
           />
-          <Text size="sm" fw={500} c="grey.8" className={classes.description}>
+          <Text size="sm" c="grey.7" className={classes.description}>
             {footerDesc}
           </Text>
         </div>
@@ -101,7 +101,7 @@ const Footer = () => {
       {/* after footer */}
       <Container size="lg" className={classes.afterFooter}>
         <Text c="brand">
-          The Big Brother Program | © {new Date().getFullYear()} All Rights
+          The Big Brother Program © {new Date().getFullYear()}. All Rights
           Reserved.
         </Text>
         <Box className={classes.afterFooterAction}>

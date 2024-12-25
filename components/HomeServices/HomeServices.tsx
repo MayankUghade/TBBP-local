@@ -22,19 +22,17 @@ const HomeServices = () => {
       {/* Services Carousel */}
       <div className={classes.carouselContainer}>
         <Carousel
-          slideSize="33%"
-          height={"100%"}
-          slideGap="lg"
+          slideSize="33.333%"
+          slideGap={{ base: "sm", sm: "md", md: "lg" }}
           loop
           withControls={false}
           plugins={[autoplay.current]}
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
-          style={{ flex: 1 }}
         >
           {/* ...slides */}
           {serviceCategories.map((category) => (
-            <CarouselSlide key={category.id} style={{ height: "auto" }}>
+            <CarouselSlide key={category.id}>
               <CategoryCard
                 name={category.name}
                 link={category.id}

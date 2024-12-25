@@ -7,7 +7,6 @@ import {
   Paper,
   Stack,
   Text,
-  Title,
 } from "@mantine/core";
 import classes from "./styles.module.css";
 import Socials from "./Socials";
@@ -27,9 +26,9 @@ const ContactFooter = () => {
           <Stack className={classes.leftSection}>
             <Socials />
             <Box>
-              <Title order={4} className={classes.heading}>
+              <Text className={classes.heading}>
                 {contactFooterData.heading}
-              </Title>
+              </Text>
               <Text c="gray.8">{contactFooterData.content}</Text>
             </Box>
 
