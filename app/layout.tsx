@@ -12,6 +12,7 @@ import { Poppins } from "next/font/google";
 import "@mantine/carousel/styles.css";
 import "./globals.css";
 import { Metadata } from "next";
+import Script from "next/script";
 
 // If loading a variable font, you don't need to specify the font weight
 const poppins = Poppins({
@@ -68,6 +69,7 @@ export const metadata: Metadata = {
   category: "education",
 };
 
+// Component to wrap the entire app in
 export default function RootLayout({ children }: { children: any }) {
   return (
     <html lang="en" className={poppins.className} {...mantineHtmlProps}>
@@ -82,7 +84,7 @@ export default function RootLayout({ children }: { children: any }) {
         />
         <meta
           name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </head>
       <body>
@@ -91,6 +93,19 @@ export default function RootLayout({ children }: { children: any }) {
           {children}
           <Footer />
         </MantineProvider>
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PLRLSFLKWW"
+          strategy="afterInteractive"
+        ></Script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PLRLSFLKWW');
+          `}
+        </Script>
       </body>
     </html>
   );

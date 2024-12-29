@@ -53,7 +53,7 @@ function Navbar() {
                 src="/logo.svg"
                 fill
                 sizes="(min-width: 808px) 20vw, 40vw"
-                alt="Big Brother logo"
+                alt="The Big Brother Mentorship Program logo"
                 style={{
                   objectFit: "contain",
                 }}

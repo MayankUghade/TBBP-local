@@ -5,9 +5,9 @@ import servicesData from "../../../lib/data/services.json";
 
 type Props = {
   params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
 };
 
+// Dynamic route metadata
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // read route params
   const slug = params.slug;
@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+// Component
 const page = ({ params }: { params: { slug: string } }) => {
   return (
     <>

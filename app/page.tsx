@@ -13,7 +13,6 @@ export default function HomePage() {
       <Services />
       <HomeAbout />
       <Faqs />
-      {/* <Testimonials /> */}
       <ContactFooter />
     </>
   );

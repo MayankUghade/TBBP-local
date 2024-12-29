@@ -26,7 +26,7 @@ const LandingImage = ({ imgUrl, width, height }: LandingImageProps) => {
         width={width}
         height={height}
         style={{ objectFit: "cover" }}
-        alt=" "
+        alt=""
       />
     </motion.div>
   );
