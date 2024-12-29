@@ -9,6 +9,8 @@ import WhyUs from "../WhyUs/WhyUs";
 import ContactCTA from "../Landing/ContactCTA";
 import { useMediaQuery } from "@mantine/hooks";
 import { motion } from "framer-motion";
+import bgCircle from "../../assets/circle-bg.svg";
+
 export interface ServicesProps {
   id: string;
   name: string;
@@ -37,7 +39,11 @@ const ServiceCategory = ({ slug }: { slug: string }) => {
 
   return (
     <>
-      <Container size="lg" style={{ margin: "0 auto 5rem" }}>
+      <Container
+        size="lg"
+        style={{ margin: "0 auto 5rem", position: "relative" }}
+      >
+        <Box className={classes.eclipse}></Box>
         <Stack gap={10}>
           {/* Heading and tagline */}
           <motion.div

@@ -25,7 +25,25 @@
   margin: 0 auto rem(30px);
 }
 
-/* section */
+/* Background ------------------- */
+.eclipse {
+  position: absolute;
+  z-index: -1;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  background: url("../../assets/circle-bg.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 1000px;
+  width: 100%;
+
+  @media screen and (max-width: $mantine-breakpoint-sm) {
+    display: none;
+  }
+}
+
+/* Services section ----------------------- */
 .section {
   padding: calc(var(--mantine-spacing-md) * 4) var(--mantine-spacing-md);
 
