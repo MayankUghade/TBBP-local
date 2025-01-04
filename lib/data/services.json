@@ -22,21 +22,21 @@
       "id": "career-transition",
       "name": "Career Transition",
       "tagline": "Ready for a new challenge? We've got you covered.",
-      "description": "Your Next Chapter: Navigating Career Transitions with Confidence",
+      "description": "Our career transition support program provides comprehensive guidance to help you navigate a career change with confidence. We offer expert mentorship from seasoned professionals, in-depth career assessments, access to relevant education and certifications, resume and LinkedIn profile revamps, and strategic networking opportunities to empower you to achieve your career goals.",
       "serviceIds": ["career-transition"]
     },
     "international-education-assitance": {
       "id": "international-education-assitance",
       "name": "International Education Assistance",
       "tagline": "Big Brother Program: Your Guide to Studying Abroad",
-      "description": "Your Global Passport to Academic Excellence",
+      "description": "Big Brother Program simplifies your journey to study abroad. Our expert team provides comprehensive guidance, including college and program matching, crafting compelling Statements of Purpose, streamlining applications, assisting with visa processes, and exploring financial aid options, ensuring a smooth and successful transition to your dream destination.",
       "serviceIds": ["international-education-assitance"]
     },
     "aviation-career-program": {
       "id": "aviation-career-program",
       "name": "Aviation Career Program",
       "tagline": "Elevate Your Aviation Career with CAACO",
-      "description": "Are you ready to take flight in the aviation industry?",
+      "description": "Are you aspiring to build a rewarding career in the dynamic aviation industry? Our comprehensive Aviation Career Program, developed in collaboration with GMR Aero Academy, offers you the essential knowledge and skills needed to excel in airport, airline, and cargo operations.",
       "serviceIds": ["aviation-career-program"]
     }
   },
@@ -258,5 +258,52 @@
       "type": "paragraph",
       "content": ""
     }
+  },
+  "metadata": {
+    "grade-8-12": [
+      "high school career guidance",
+      "personalized mentorship",
+      "grade 8 to 12 education planning",
+      "secondary school counseling",
+      "school career planning",
+      "research career programs",
+      "career exploration"
+    ],
+    "ug-pg": [
+      "higher education roadmap",
+      "undergraduate program selection",
+      "skill development courses",
+      "postgraduate career counseling",
+      "masters program guidance",
+      "PhD consultation",
+      "job search strategies",
+      "job search assistance"
+    ],
+    "career-transition": [
+      "career change support",
+      "career transition assistance",
+      "mid-career switch",
+      "skill gap analysis",
+      "job transition counseling",
+      "networking for career change"
+    ],
+    "international-education-assitance": [
+      "study abroad guidance",
+      "overseas education assistance",
+      "international college selection",
+      "visa application support",
+      "financial aid for international students",
+      "SOP writing",
+      "college application assistance"
+    ],
+    "aviation-career-program": [
+      "airport operations training",
+      "CAACO certification",
+      "coorporate readiness certification",
+      "aviation job placement",
+      "aviation training program",
+      "aviation career development",
+      "practical aviation skills"
+    ]
   }
 }

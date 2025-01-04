@@ -23,29 +23,36 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Big Brother",
+    default:
+      "The Big Brother Program: Career Guidance | Professional Mentorship",
     template: "%s | Big Brother",
   },
   description:
-    "We are your dedicated partners in journey towards career success and personal development.",
+    "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into professional success.",
   applicationName: "The Big Brother",
   keywords: [
-    "Education",
-    "Counselling",
-    "Higher Studies",
+    "higher education mentoring",
     "Study Abroad",
     "Personal development",
-    "career",
-    "Consultations",
     "Career Building",
+    "career guidance services",
+    "education counseling",
+    "student mentorship program",
+    "career planning for students",
+    "career guidance for high school students",
+    "education and career counseling services",
+    "career change guidance",
+    "international university admissions",
+    "aviation industry careers",
   ],
   metadataBase: new URL("https://tbbp.in"),
   openGraph: {
-    title: "Big Brother",
+    title: "The Big Brother Program: Career Guidance | Professional Mentorship",
     description:
-      "We are your dedicated partners in journey towards career success and personal development.",
+      "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into professional success.",
     url: "https://tbbp.in/",
-    siteName: "Big Brother",
+    siteName:
+      "The Big Brother Program: Career Guidance | Professional Mentorship",
     images: [
       {
         url: "https://tbbp.in/og.png", // Must be an absolute URL
@@ -58,15 +65,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Big Brother",
+    title: "The Big Brother Program: Career Guidance | Professional Mentorship",
     description:
-      "We are your dedicated partners in journey towards career success and personal development.",
+      "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into professional success.",
     siteId: "1467726470533754880",
     creator: "@nextjs",
     creatorId: "1467726470533754880",
     images: ["https://tbbp.in/og.png"], // Must be an absolute URL
   },
-  category: "education",
+  category: "mentorship",
 };
 
 // Component to wrap the entire app in

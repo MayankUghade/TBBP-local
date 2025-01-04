@@ -10,19 +10,22 @@ interface WhyUsCardProps {
   icon: string;
 }
 
+const item = {
+  visible: { opacity: 1, y: 0 },
+  hidden: {
+    opacity: 0,
+    y: 100,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
+
 const WhyUsCard = ({ label, desc, icon }: WhyUsCardProps) => {
   return (
     <Box
       component={motion.div}
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-        transition: {
-          duration: 0.4,
-        },
-      }}
-      viewport={{ amount: "some" }}
+      variants={item}
       className={classes.whyUsCardWrapper}
     >
       <Box className={classes.whyUsCard}>

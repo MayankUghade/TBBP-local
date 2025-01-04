@@ -44,7 +44,7 @@ const ContactFooter = () => {
                   style={{ fontSize: "20px", color: `var(--brand-blue)` }}
                 />
                 <Anchor
-                  href="mailto:hello@tbbp.in"
+                  href={`mailto:${contactFooterData.contacts.email}`}
                   target="_blank"
                   rel="noopener"
                   style={{

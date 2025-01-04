@@ -15,9 +15,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const serviceTitle =
     servicesData.categories[slug as keyof typeof servicesData.categories]
       .name || "Services";
+  const serviceKeywords =
+    servicesData.metadata[slug as keyof typeof servicesData.metadata];
 
   return {
     title: serviceTitle,
+    keywords: serviceKeywords,
   };
 }
 

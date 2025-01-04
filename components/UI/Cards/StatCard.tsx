@@ -3,14 +3,17 @@ import { Stack, Text } from "@mantine/core";
 import classes from "../styles.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import AnimatedCounter from "lib/animations/AnimateNumberCounter";
 
 interface StatCardProps {
   label: string;
-  value: string;
   icon: string;
+  numberSuffix: string;
+  from: number;
+  to: number;
 }
 
-const StatCard = ({ label, value, icon }: StatCardProps) => {
+const StatCard = ({ label, icon, from, to, numberSuffix }: StatCardProps) => {
   return (
     <motion.div
       className={classes.statCard}
@@ -33,11 +36,12 @@ const StatCard = ({ label, value, icon }: StatCardProps) => {
         width={60}
         height={60}
         className={classes.icon}
-        alt={`Illustration for ${value}`}
+        alt={`Illustration for ${label}`}
       />
       <Stack className={classes.statContent}>
         <Text c="brand" className={classes.statTitle}>
-          {value}
+          <AnimatedCounter from={from} to={to} />
+          {numberSuffix}
         </Text>
         <Text className={classes.statDescription}>{label}</Text>
       </Stack>

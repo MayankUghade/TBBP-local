@@ -40,8 +40,8 @@ export const contactFooterData = {
   cta: "enquire now",
   contactUrl: contactUrl,
   contacts: {
-    phone: "+91-7093116004",
-    email: "hello@tbbp.in",
+    phone: "+91 70281 61277",
+    email: "vandana@tbbp.in",
     address:
       "2nd floor, Manvins building, Near Panjim Church, Panjim, Goa, India (403001)",
     map: "https://maps.app.goo.gl/NhyFDbL3be4z6sYT6",

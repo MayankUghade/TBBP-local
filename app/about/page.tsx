@@ -8,8 +8,34 @@ import OurValues from "@/components/Values/OurValues";
 import WhyUs from "@/components/WhyUs/WhyUs";
 import { Metadata } from "next";
 
+const aboutPageKeywords = {
+  primaryKeywords: [
+    "experienced career mentors",
+    "professional education counselors",
+    "student guidance experts",
+  ],
+
+  secondaryKeywords: [
+    "gap academia and industry",
+    "provide skill development programs",
+    "empowering students",
+    "student success rate",
+  ],
+
+  longTailKeywords: [
+    "why choose us for career guidance",
+    "our approach to student mentorship",
+    "career counseling expertise and background",
+  ],
+};
+
 export const metadata: Metadata = {
   title: "About",
+  keywords: [
+    ...aboutPageKeywords.primaryKeywords,
+    ...aboutPageKeywords.secondaryKeywords,
+    ...aboutPageKeywords.longTailKeywords,
+  ],
 };
 
 const page = () => {

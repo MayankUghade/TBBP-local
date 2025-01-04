@@ -5,13 +5,23 @@ import classes from "./styles.module.css";
 const stats = [
   {
     label: "Success Driven Seminars",
-    value: "100%",
+    from: 80,
+    to: 100,
+    numberSuffix: "%",
     icon: "/stats/success.svg",
   },
-  { label: "Industry Experts", value: "500+", icon: "/stats/industry.svg" },
+  {
+    label: "Industry Experts",
+    from: 450,
+    to: 500,
+    numberSuffix: "+",
+    icon: "/stats/industry.svg",
+  },
   {
     label: "Career Choice Consultancies",
-    value: "500+",
+    from: 450,
+    to: 500,
+    numberSuffix: "+",
     icon: "/stats/career.svg",
   },
 ];
@@ -23,7 +33,9 @@ const Statistics = () => {
         <StatCard
           key={stat.label}
           label={stat.label}
-          value={stat.value}
+          from={stat.from}
+          to={stat.to}
+          numberSuffix={stat.numberSuffix}
           icon={stat.icon}
         />
       ))}
