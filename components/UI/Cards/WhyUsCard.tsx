@@ -37,7 +37,7 @@ const WhyUsCard = ({ label, desc, icon }: WhyUsCardProps) => {
           alt={`Illustration for --`}
         />
         <Stack>
-          <Title order={4} c="brand" ta="center">
+          <Title component="h3" order={4} c="brand" ta="center">
             {label}
           </Title>
           <Text c="grey.7" size="sm" ta="center">

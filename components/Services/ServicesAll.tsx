@@ -28,7 +28,7 @@ const ServicesAll = ({ services }: { services: ServiceType[] }) => {
           >
             <Container size="lg" className={classes.sectionContainer}>
               <Stack gap={12} className={classes.textContainer}>
-                <Title order={2} c="indigo.5" mb={10}>
+                <Title component="h3" order={2} c="indigo.5" mb={10}>
                   {service.heading}
                 </Title>
                 <Text c="grey.8" mb={10}>

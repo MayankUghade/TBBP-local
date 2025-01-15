@@ -15,12 +15,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const serviceTitle =
     servicesData.categories[slug as keyof typeof servicesData.categories]
       .name || "Services";
+  const serviceDesc =
+    servicesData.categories[slug as keyof typeof servicesData.categories]
+      .description ||
+    "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into professional success.";
   const serviceKeywords =
     servicesData.metadata[slug as keyof typeof servicesData.metadata];
 
   return {
     title: serviceTitle,
+    description: serviceDesc,
     keywords: serviceKeywords,
+    alternates: {
+      canonical: `/${params.slug}`,
+    },
   };
 }
 

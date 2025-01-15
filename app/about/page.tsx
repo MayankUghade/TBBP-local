@@ -31,6 +31,8 @@ const aboutPageKeywords = {
 
 export const metadata: Metadata = {
   title: "About",
+  description:
+    "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into professional success.",
   keywords: [
     ...aboutPageKeywords.primaryKeywords,
     ...aboutPageKeywords.secondaryKeywords,

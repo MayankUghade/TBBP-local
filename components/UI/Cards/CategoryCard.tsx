@@ -1,5 +1,5 @@
 "use client";
-import { Stack, Text } from "@mantine/core";
+import { Stack, Text, Title } from "@mantine/core";
 import Link from "next/link";
 import classes from "../styles.module.css";
 import Image from "next/image";
@@ -17,9 +17,9 @@ const CategoryCard = ({ name, link, icon, description }: any) => {
           alignItems: "flex-start",
         }}
       >
-        <Text fw={600} c="indigo.5" size="24px">
+        <Title order={3} fw={600} c="indigo.5" size="24px">
           {name}
-        </Text>
+        </Title>
         <Text c="dark" size="sm">
           {description}
         </Text>

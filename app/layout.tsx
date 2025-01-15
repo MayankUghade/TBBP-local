@@ -31,6 +31,8 @@ export const metadata: Metadata = {
     "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into professional success.",
   applicationName: "The Big Brother",
   keywords: [
+    "The Big Brother Program",
+    "Counselling near me",
     "higher education mentoring",
     "Study Abroad",
     "Personal development",
@@ -44,8 +46,17 @@ export const metadata: Metadata = {
     "career change guidance",
     "international university admissions",
     "aviation industry careers",
+    "Short Term Aviation Courses",
+    "3 Month Aviation Courses",
+    "GMR Aero Academy Courses",
+    "Online Learning Aviation",
+    "Aviation Industry Jobs",
+    "Aviation Career Paths",
   ],
   metadataBase: new URL("https://tbbp.in"),
+  alternates: {
+    canonical: "/", // The canonical URL of the page
+  },
   openGraph: {
     title: "The Big Brother Program: Career Guidance | Professional Mentorship",
     description:
@@ -55,7 +66,7 @@ export const metadata: Metadata = {
       "The Big Brother Program: Career Guidance | Professional Mentorship",
     images: [
       {
-        url: "https://tbbp.in/og.png", // Must be an absolute URL
+        url: "https://tbbp.in/og.png",
         width: 1200,
         height: 628,
       },
@@ -71,7 +82,7 @@ export const metadata: Metadata = {
     siteId: "1467726470533754880",
     creator: "@nextjs",
     creatorId: "1467726470533754880",
-    images: ["https://tbbp.in/og.png"], // Must be an absolute URL
+    images: ["https://tbbp.in/og.png"], // Must be an aboslute URL
   },
   category: "mentorship",
 };

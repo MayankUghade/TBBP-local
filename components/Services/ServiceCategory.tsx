@@ -63,9 +63,9 @@ const ServiceCategory = ({ slug }: { slug: string }) => {
           >
             <Stack gap={4} mt={36}>
               <Title className={classes.title}>{categorySelected.name}</Title>
-              <Text className={classes.tagline}>
+              <Title order={2} className={classes.tagline}>
                 {categorySelected.tagline}
-              </Text>
+              </Title>
             </Stack>
           </motion.div>
           {/* Description */}
