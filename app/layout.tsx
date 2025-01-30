@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Big Brother",
   },
   description:
-    "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into professional success.",
+    "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into success.",
   applicationName: "The Big Brother",
   keywords: [
     "The Big Brother Program",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Big Brother Program: Career Guidance | Professional Mentorship",
     description:
-      "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into professional success.",
+      "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into success.",
     url: "https://tbbp.in/",
     siteName:
       "The Big Brother Program: Career Guidance | Professional Mentorship",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Big Brother Program: Career Guidance | Professional Mentorship",
     description:
-      "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into professional success.",
+      "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into success.",
     siteId: "1467726470533754880",
     creator: "@nextjs",
     creatorId: "1467726470533754880",

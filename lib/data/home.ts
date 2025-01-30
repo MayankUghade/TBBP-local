@@ -1,5 +1,5 @@
 import servicesData from "./services.json";
-import { CONTACT_URL } from "./constants";
+import { CONTACT_NUMBER, CONTACT_URL, MAP_URL } from "./constants";
 import {
   aviation,
   careerTransition,
@@ -40,11 +40,11 @@ export const contactFooterData = {
   cta: "enquire now",
   contactUrl: contactUrl,
   contacts: {
-    phone: "+91 70281 61277",
+    phone: `+91 ${CONTACT_NUMBER}`,
     email: "vandana@tbbp.in",
     address:
-      "2nd floor, Manvins building, Near Panjim Church, Panjim, Goa, India (403001)",
-    map: "https://maps.app.goo.gl/NhyFDbL3be4z6sYT6",
+      "H.No 117/2, Boca De Vaca, above Salgaonkar Sanchar, Panjim, Goa, India (403001)",
+    map: MAP_URL,
   },
 };
 
