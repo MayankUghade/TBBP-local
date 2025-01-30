@@ -41,7 +41,7 @@ export const contactFooterData = {
   contactUrl: contactUrl,
   contacts: {
     phone: `+91 ${CONTACT_NUMBER}`,
-    email: "vandana@tbbp.in",
+    email: "info@tbbp.in",
     address:
       "H.No 117/2, Boca De Vaca, above Salgaonkar Sanchar, Panjim, Goa, India (403001)",
     map: MAP_URL,
