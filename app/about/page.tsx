@@ -6,6 +6,9 @@ import Vision from "@/components/Mission/Vision";
 import Statistics from "@/components/Statistics/Statistics";
 import OurValues from "@/components/Values/OurValues";
 import WhyUs from "@/components/WhyUs/WhyUs";
+import { ADDRESS } from "lib/data/constants";
+import SEO_DATA from "lib/data/seo-data";
+import { generateAcademicOrgSchema, JsonLd } from "lib/SchemaGenerator";
 import { Metadata } from "next";
 
 const aboutPageKeywords = {
@@ -31,8 +34,7 @@ const aboutPageKeywords = {
 
 export const metadata: Metadata = {
   title: "About",
-  description:
-    "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into professional success.",
+  description: SEO_DATA.description,
   keywords: [
     ...aboutPageKeywords.primaryKeywords,
     ...aboutPageKeywords.secondaryKeywords,
@@ -41,6 +43,18 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
+  const orgSchema = generateAcademicOrgSchema({
+    name: SEO_DATA.shortName,
+    description: SEO_DATA.description,
+    address: {
+      street: ADDRESS.street,
+      city: ADDRESS.city,
+      state: ADDRESS.state,
+      postalCode: ADDRESS.postalCode,
+      country: ADDRESS.country,
+    },
+  });
+
   return (
     <>
       <AboutHero />
@@ -50,6 +64,7 @@ const page = () => {
       <OurValues />
       <Faqs />
       <ContactFooter />
+      <JsonLd data={orgSchema} />
     </>
   );
 };

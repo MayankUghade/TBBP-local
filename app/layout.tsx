@@ -13,6 +13,7 @@ import "@mantine/carousel/styles.css";
 import "./globals.css";
 import { Metadata } from "next";
 import Script from "next/script";
+import SEO_DATA from "lib/data/seo-data"; // Basic SEO data
 
 // If loading a variable font, you don't need to specify the font weight
 const poppins = Poppins({
@@ -23,13 +24,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default:
-      "The Big Brother Program: Career Guidance | Professional Mentorship",
-    template: "%s | Big Brother",
+    default: SEO_DATA.siteName,
+    template: "%s | The Big Brother Program",
   },
-  description:
-    "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into success.",
-  applicationName: "The Big Brother",
+  description: SEO_DATA.description,
+  applicationName: SEO_DATA.shortName,
   keywords: [
     "The Big Brother Program",
     "Counselling near me",
@@ -58,12 +57,10 @@ export const metadata: Metadata = {
     canonical: "/", // The canonical URL of the page
   },
   openGraph: {
-    title: "The Big Brother Program: Career Guidance | Professional Mentorship",
-    description:
-      "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into success.",
+    title: SEO_DATA.siteName,
+    description: SEO_DATA.description,
     url: "https://tbbp.in/",
-    siteName:
-      "The Big Brother Program: Career Guidance | Professional Mentorship",
+    siteName: SEO_DATA.siteName,
     images: [
       {
         url: "https://tbbp.in/og.png",
@@ -76,9 +73,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Big Brother Program: Career Guidance | Professional Mentorship",
-    description:
-      "Get personalized career guidance, professional mentorship, and expert advice to make informed career decisions. Transform your educational journey into success.",
+    title: SEO_DATA.siteName,
+    description: SEO_DATA.description,
     siteId: "1467726470533754880",
     creator: "@nextjs",
     creatorId: "1467726470533754880",

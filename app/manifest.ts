@@ -1,11 +1,11 @@
+import SEO_DATA from "lib/data/seo-data";
 import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "The Big Brother Program",
-    short_name: "Big Brother",
-    description:
-      "Your Dedicated Partner for Career Success and Personal Development. Founded on the belief that with the right guidance,every student can achieve their dreams.",
+    name: SEO_DATA.siteName,
+    short_name: SEO_DATA.shortName,
+    description: SEO_DATA.description,
     start_url: "/",
     display: "standalone",
     background_color: "#fff",
