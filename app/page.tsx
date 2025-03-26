@@ -1,9 +1,10 @@
-import ContactFooter from "@/components/ContactFooter/ContactFooter";
-import HomeAbout from "@/components/HomeAbout/HomeAbout";
-import Landing from "@/components/Landing/Landing";
-import Services from "@/components/HomeServices/HomeServices";
-import Statistics from "@/components/Statistics/Statistics";
-import Faqs from "@/components/Faqs/Faqs";
+import ContactFooter from "Components/ContactFooter/ContactFooter";
+import HomeAbout from "Components/HomeAbout/HomeAbout";
+import Landing from "Components/Landing/Landing";
+import Services from "Components/HomeServices/HomeServices";
+import Statistics from "Components/Statistics/Statistics";
+import Faqs from "Components/Faqs/Faqs";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Statistics />
       <Services />
       <HomeAbout />
+      <Testimonials />
       <Faqs />
       <ContactFooter />
     </>

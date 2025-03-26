@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable react/no-unescaped-entities */
 import {
   Anchor,
@@ -18,6 +19,14 @@ import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 
 const ContactFooter = () => {
+  const latitude = 15.494652;
+  const longitude = 73.825256;
+  const mapUrl = `https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3844.809941874043!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDI5JzQwLjgiTiA3M8KwNDknMzAuOSJF!5e0!3m2!1sen!2sin!4v1738240409189!5m2!1sen!2sin`;
+
+  const handleMapClick = () => {
+    window.open(mapUrl, "_blank");
+  };
+
   return (
     <Box className={classes.box}>
       <Container size="lg">
@@ -90,18 +99,38 @@ const ContactFooter = () => {
             </Link>
           </Stack>
 
-          {/* right section */}
-          <Stack className={classes.rightSection} gap={20}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3844.809941874043!2d73.825256!3d15.494652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDI5JzQwLjgiTiA3M8KwNDknMzAuOSJF!5e0!3m2!1sen!2sin!4v1738240409189!5m2!1sen!2sin"
-              title="Our address on Google Maps"
-              style={{ border: 0, width: "100%", height: "100%" }}
-              loading="lazy"
-            ></iframe>
+          {/* right section - Google Map */}
+          <Stack
+            className={classes.rightSection}
+            gap={20}
+            style={{ position: "relative" }}
+          >
+            <div
+              style={{ position: "relative", width: "100%", height: "100%" }}
+            >
+              <button
+                onClick={handleMapClick}
+                className="absolute top-4 right-4 z-10 bg-white px-2 py-2 rounded-md shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center gap-1 text-xs"
+              >
+                <FaLocationDot className="text-lg text-red-500" />
+                <span className="md:block hidden">Open Location</span>
+              </button>
+              <iframe
+                src={mapUrl}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Our Address on Google Maps"
+              />
+            </div>
           </Stack>
         </Group>
       </Container>
     </Box>
   );
 };
+
 export default ContactFooter;

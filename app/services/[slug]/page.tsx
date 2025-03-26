@@ -1,5 +1,5 @@
-import ContactFooter from "@/components/ContactFooter/ContactFooter";
-import ServiceCategory from "@/components/Services/ServiceCategory";
+import ContactFooter from "Components/ContactFooter/ContactFooter";
+import ServiceCategory from "Components/Services/ServiceCategory";
 import { Metadata } from "next";
 import servicesData from "../../../lib/data/services.json";
 import SEO_DATA from "lib/data/seo-data";

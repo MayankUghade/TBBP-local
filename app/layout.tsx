@@ -6,8 +6,8 @@ import {
   mantineHtmlProps,
 } from "@mantine/core";
 import { theme } from "../theme";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
+import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer";
 import { Poppins } from "next/font/google";
 import "@mantine/carousel/styles.css";
 import "./globals.css";
