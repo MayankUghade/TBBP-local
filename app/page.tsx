@@ -4,7 +4,7 @@ import Landing from "Components/Landing/Landing";
 import Services from "Components/HomeServices/HomeServices";
 import Statistics from "Components/Statistics/Statistics";
 import Faqs from "Components/Faqs/Faqs";
-import Testimonials from "@/components/Testimonials/Testimonials";
+import Testimonials from "Components/Testimonials/Testimonials";
 
 export default function HomePage() {
   return (
