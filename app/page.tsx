@@ -1,10 +1,10 @@
-import ContactFooter from "Components/ContactFooter/ContactFooter";
-import HomeAbout from "Components/HomeAbout/HomeAbout";
-import Landing from "Components/Landing/Landing";
-import Services from "Components/HomeServices/HomeServices";
-import Statistics from "Components/Statistics/Statistics";
-import Faqs from "Components/Faqs/Faqs";
-import Testimonials from "Components/Testimonials/Testimonials";
+import ContactFooter from "MainComponents/ContactFooter/ContactFooter";
+import HomeAbout from "MainComponents/HomeAbout/HomeAbout";
+import Landing from "MainComponents/Landing/Landing";
+import Services from "MainComponents/HomeServices/HomeServices";
+import Statistics from "MainComponents/Statistics/Statistics";
+import Faqs from "MainComponents/Faqs/Faqs";
+import Testimonials from "MainComponents/Testimonials/Testimonials";
 
 export default function HomePage() {
   return (
