@@ -45,8 +45,8 @@ const HomeServices = () => {
           onMouseLeave={() => setIsPaused(false)}
         >
           <CarouselContent>
-            {serviceCategories.map((category) => (
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+            {serviceCategories.map((category, key) => (
+              <CarouselItem key={key} className="md:basis-1/2 lg:basis-1/3">
                 <CategoryCard
                   name={category.name}
                   link={category.id}
